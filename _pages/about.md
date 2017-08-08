@@ -2,7 +2,7 @@
 permalink: /about/
 title: "About"
 excerpt: "About Bradley Thornton"
-layout: about
+layout: single
 author_profile: true
 
 ---
