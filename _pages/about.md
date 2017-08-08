@@ -16,4 +16,5 @@ I’m a Security Engineer working with a Fortune 15 company. I participate in mu
 I currently hold a Bachelors in Business Administration - Management of Information Systems from the University of North Carolina - Wilmington. I've recently obtained my Offensive Security Certified Professional (OSCP) and CompTIA Security+ certifications. I've managed to also be trained and certified in various vendor software such as CyberArk, RSA, and Splunk.
 
 **Personal**
+
 Outside of work I’m a beginner wood-worker, avid movie buff, traveler, gamer, and bass player.
