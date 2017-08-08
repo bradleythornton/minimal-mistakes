@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Bradley Thornton"
-  avatar           : "thor-sec/assets/images/bio_pic.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://github.com/bradleythornton/thor-sec/assets/images/bio_pic.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "InfoSec enthusiast."
   location         : "Richmond, VA"
   email            : 
