@@ -17,4 +17,4 @@ I currently hold a Bachelors in Business Administration - Management of Informat
 
 **Personal**
 
-Outside of work I’m a beginner wood-worker, avid movie buff, traveler, gamer, and bass player.
+Outside of work I’m a beginner wood-worker, avid movie buff, traveler, jeeper, gamer, food lover, and bass player.
