@@ -78,8 +78,8 @@ analytics:
 # Site Author
 author:
   name             : "Bradley Thornton"
-  avatar           : "/assets/images/test3.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "InfoSec enthusiast"
+  avatar           : "/assets/images/test3.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "InfoSec Enthusiast"
   location         : "Richmond, VA"
   email            : 
   uri              :
