@@ -13,3 +13,5 @@ layouts_gallery:
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
 ---
+
+This is where I'll put a brief about section
