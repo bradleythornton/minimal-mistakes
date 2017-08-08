@@ -1,6 +1,6 @@
 ---
-title:  "Basic Buffer Overflow"
-header: "Basic Buffer Overflow"
+title:  "Basic Buffer Overflows"
+header: "Basic Buffer Overflows"
 categories: 
   - Tutorial
 tags:
