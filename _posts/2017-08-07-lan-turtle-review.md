@@ -1,6 +1,6 @@
 ---
-title:  "Lan TurtleOSCP Review"
-header: "Lan TurtleOSCP Review"
+title:  "Lan Turtle Review"
+header: "Lan Turtle Review"
 categories: 
   - Review
 tags:
