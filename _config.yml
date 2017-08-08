@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Thor-Sec"
 title_separator          : "-"
 name                     : "Bradley Thornton"
-description              : "An amazing journey through offensive security"
+description              : "A journey through offensive security"
 url                      : #"https://www.thor-sec.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #"bradleythornton/thor-sec" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Bradley Thornton"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "InfoSec enthusiast."
+  bio              : "Information Security enthusiast."
   location         : "Richmond, VA"
   email            : 
   uri              :
