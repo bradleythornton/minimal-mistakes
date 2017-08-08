@@ -1,10 +1,10 @@
 ---
-title:  "Second Topic"
-header: "Second Topic"
+title:  "Getting started with Bug Bounties"
+header: "Getting started with Bug Bounties"
 categories: 
   - Tutorial
 tags:
-  - Hacking
+  - BugBounties
 ---
 
-This is where I'll be adding a second topic
+This article will review how to get started with bug bounties
