@@ -9,11 +9,8 @@ tags:
 
 # Usage
 ***
-Insert picture here
-  - image_path: assets/images/netcat.JPG
-    alt: "Netcat"
-    title: "Netcat"
-    excerpt: "Netcat usage information"
+
+![Netcat Usage](https://github.com/bradleythornton/thor-sec/blob/master/assets/images/netcat.JPG)
 
 # Basic  
 ***
