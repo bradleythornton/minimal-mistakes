@@ -12,7 +12,7 @@ tags:
 
 ![Netcat Usage](/assets/images/netcat.JPG)
 
-# Basic  
+# Basic Commands  
 ***
 #### TCP Port - Connecting  
 `nc -nv <IP> <PORT>`
