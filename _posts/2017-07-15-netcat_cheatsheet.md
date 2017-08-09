@@ -10,7 +10,7 @@ tags:
 # Usage
 ***
 
-![Netcat Usage](https://github.com/bradleythornton/thor-sec/blob/master/assets/images/netcat.JPG)
+![Netcat Usage](/assets/images/netcat.JPG)
 
 # Basic  
 ***
