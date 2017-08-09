@@ -31,7 +31,7 @@ Insert picture here
 `nc -z <IP> <PORT RANGE>`
 
 #### Banner Grabbing  
-`echo "" | nc -nv -w1 <IP Address> <Ports>`    
+`echo "" | nc -nv -w1 <IP Address> <Ports>`
 
 # Windows  
 ***
