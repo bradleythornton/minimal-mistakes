@@ -32,9 +32,7 @@ Explain static tree analysis
 - Run script and locate EIP&#39;s bytes
 - Use pattern\_offset.rb to find the position from your pattern\_create script
   - Usage: pattern-offset.rb 13731415 &lt;--EIP value from crash
-- It should return your location (something like 1403). This means that on the 1404
-# th
- byte is where you can direct EIP. A good way to test this is to send a certain amount of A&#39;s, B&#39;s, and C&#39;s to see where the values are located
+- It should return your location (something like 1403). This means that on the 1404th byte is where you can direct EIP. A good way to test this is to send a certain amount of A&#39;s, B&#39;s, and C&#39;s to see where the values are located
   - Example: buffer = &quot;A&quot;\*1403 + &quot;B&quot;\*4 + &quot;C&quot;\*793 &lt;----the last part is to fulfill the orginial 2200 buffer
 
 **(Optional) Increase the buffer size to allow room for shellcode**
