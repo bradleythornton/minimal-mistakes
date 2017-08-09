@@ -7,13 +7,11 @@ tags:
   - Netcat
 ---
 
-Usage
------
+# Usage
 Insert picture here
 
 
-Basic
------
+# Basic  
 **TCP Port - Connecting**  
 `nc -nv <IP> <PORT>`
 
