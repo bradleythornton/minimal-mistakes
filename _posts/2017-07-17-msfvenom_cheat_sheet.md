@@ -12,7 +12,7 @@ Msfvenom (replaced the former msfpayload and msfencode tools) and is a tool that
 # Usage  
 ***
 
-Insert picture here
+![Msfvenom Usage](/assets/images/msfvenom.JPG)
 
 # Basic Commands  
 ***
