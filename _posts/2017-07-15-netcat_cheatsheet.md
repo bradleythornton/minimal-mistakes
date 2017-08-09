@@ -14,7 +14,8 @@ Insert picture here
 
 Basic
 -----
-##TCP Port - Connecting
+##TCP Port - Connecting##
+
 `nc -nv <IP> <PORT>`
 
 **TCP Port - Listening**
@@ -57,4 +58,5 @@ Nix
 Additional Resources
 -----
 [SANS Netcat Cheat Sheet](https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf)
+
 [Wikipedia](https://en.wikipedia.org/wiki/Netcat)
