@@ -32,7 +32,8 @@ Insert picture here
 
 #### Banner Grabbing  
 `echo "" | nc -nv -w1 <IP Address> <Ports>`
-
+  
+  
 # Windows  
 ***
 #### Bind Shell  
