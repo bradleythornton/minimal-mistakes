@@ -14,8 +14,8 @@ Insert picture here
 
 Basic
 -----
-**TCP Port - Connecting**
-```nc -nv <IP> <PORT>```
+**TCP Port - Connecting**  
+`nc -nv <IP> <PORT>`
 
 **TCP Port - Listening**
 `nc -lvp <PORT>`
