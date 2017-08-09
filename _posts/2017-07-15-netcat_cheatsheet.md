@@ -11,7 +11,6 @@ tags:
 ***
 
 ![Netcat Usage](/assets/images/netcat.JPG)
-test
 
 # Basic  
 ***
