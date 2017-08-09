@@ -13,7 +13,7 @@ Insert picture here
 
 # Basic  
 ***
-**TCP Port - Connecting**  
+***TCP Port - Connecting***  
 `nc -nv <IP> <PORT>`
 
 **TCP Port - Listening**  
