@@ -7,6 +7,8 @@ tags:
   - Netcat
 ---
 
+Netcat which has been famously labeled as the "Swiss army knife of hacking" is a networking utility used for reading/writing from TCP/UDP sockets, port scanning, file transfer, port listening, and backdooring.
+
 # Usage
 ***
 
