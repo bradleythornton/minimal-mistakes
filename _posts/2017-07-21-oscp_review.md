@@ -35,7 +35,7 @@ I basically have the same answer as everyone else that has blogged about it
  - Basic knowledge of networking, Windows/Nix, Kali, common tools of the trade
  - You don’t have to be a programmer but learn some python ahead of time and be comfortable with making minor changes to existing code. 
  - Read some security books and blogs (you can see recommendations below)
- - **Do VulnHub images!** Seriously, if you haven’t already then stop reading all the reviews and do some now before you even think about signing up. If you enjoy going through them then you’ll enjoy doing OSCP. It’s basically a free taste of it before you buy.
+ - **Do [VulnHub](https://www.vulnhub.com/) images!** Seriously, if you haven’t already then stop reading all the reviews and do some now before you even think about signing up. If you enjoy going through them then you’ll enjoy doing OSCP. It’s basically a free taste of it before you buy.
 
 ## Coursework
 
