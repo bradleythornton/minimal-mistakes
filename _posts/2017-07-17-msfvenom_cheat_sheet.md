@@ -1,6 +1,6 @@
 ---
-title:  "Msfvenom Payload Cheat Sheet"
-header: "Msfvenom Payload Cheat Sheet"
+title:  "Msfvenom Cheat Sheet"
+header: "Msfvenom Cheat Sheet"
 categories: 
   - Cheatsheet
 tags:
@@ -34,7 +34,7 @@ Msfvenom (replaced the former msfpayload and msfencode tools) and is a tool that
 `exploit -j -z`  
 
 #### Netcat  
-`nc -nlvp <PORT>
+`nc -nlvp <PORT>`
 
 # Linux  
 ***
