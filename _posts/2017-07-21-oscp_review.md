@@ -13,7 +13,7 @@ There are tons of OSCP reviews floating around the web so I’ll keep the fluff 
 
 The most popular training provided by Offensive Security would be their Penetration Testing with Kali Linux (PWK). Upon completion of the PWK course and exam requirements, you’ll be awarded with the Offensive Security Certified Professional (OSCP) certification.
 
-## Who should take it?
+## Who should take it
 
 It’s for those that have a thirst for security and actually practicing hacking techniques. This is a “learning by doing” course and if you have the **time** and **persistence** then you’ll be successful with it. I wouldn’t recommend this to someone new in the field or as a first security certification as I feel you should get your feet wet before you jump into the deep-end of the pool, but hey! You do you. 
 A major piece of advice – If you don’t have the time to be consumed by this (say goodbye to your social life and house repairs) then I would recommend getting the courseware and the least amount of lab time to save yourself some money. You can study the material at your own pace and you can obtain lab time when you are ready.
