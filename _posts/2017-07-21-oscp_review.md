@@ -9,25 +9,26 @@ tags:
 
 There are tons of OSCP reviews floating around the web so I’ll keep the fluff to a minimum, to better make use of both our time. If you want to get to the meat and potatoes of what you should do, scroll down to the recommendations section.
 
-# What is the OSCP
+## What is the OSCP
 
 The most popular training provided by Offensive Security would be their Penetration Testing with Kali Linux (PWK). Upon completion of the PWK course and exam requirements, you’ll be awarded with the Offensive Security Certified Professional (OSCP) certification.
 
-# Who should take it?
+## Who should take it?
 
 It’s for those that have a thirst for security and actually practicing hacking techniques. This is a “learning by doing” course and if you have the **time** and **persistence** then you’ll be successful with it. I wouldn’t recommend this to someone new in the field or as a first security certification as I feel you should get your feet wet before you jump into the deep-end of the pool, but hey! You do you. 
 A major piece of advice – If you don’t have the time to be consumed by this (say goodbye to your social life and house repairs) then I would recommend getting the courseware and the least amount of lab time to save yourself some money. You can study the material at your own pace and you can obtain lab time when you are ready.
 
-# What you can expect to learn
+## What you can expect to learn
 
 *Short answer:*  
 Here’s the [syllabus](https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf)  
 
-Personal answer: Expect to be taken on a very personal journey through learning, enumeration, and exploitation. You’ll spend a lot of time googling, reading blogs, researching topics, and failing… but once you get a root shell on a machine, there’s no other feeling like it! To me, this training teaches you to “think like an attacker” and enumeration more than anything else. Of course you’ll pick up technical knowledge and skillsets along the way but learning to be resourceful, relentless, and to think outside of the box is something truly special that’s offered here.
+*Personal answer:*  
+Expect to be taken on a very personal journey through learning, enumeration, and exploitation. You’ll spend a lot of time googling, reading blogs, researching topics, and failing… but once you get a root shell on a machine, there’s no other feeling like it! To me, this training teaches you to “think like an attacker” and enumeration more than anything else. Of course you’ll pick up technical knowledge and skillsets along the way but learning to be resourceful, relentless, and to think outside of the box is something truly special that’s offered here.
 
 # Pre-course recommendations
 
-I pretty much have the same answer as everyone else that has blogged about it
+I basically have the same answer as everyone else that has blogged about it
 
  - A “Never give up” attitude because it will certainly test you
  - Time to dedicate to learning and following random rabbit holes
