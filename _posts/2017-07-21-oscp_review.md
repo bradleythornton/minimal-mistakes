@@ -24,7 +24,8 @@ Short answer: Here’s the syllabus (https://www.offensive-security.com/document
 
 Personal answer: Expect to be taken on a very personal journey through learning, enumeration, and exploitation. You’ll spend a lot of time googling, reading blogs, researching topics, and failing… but once you get a root shell on a machine, there’s no other feeling like it! To me, this training teaches you to “think like an attacker” and enumeration more than anything else. Of course you’ll pick up technical knowledge and skillsets along the way but learning to be resourceful, relentless, and to think outside of the box is something truly special that’s offered here.
 
-#### Pre-course recommendations  
+# Pre-course recommendations
+
 I pretty much have the same answer as everyone else that has blogged about it
 
  - A “Never give up” attitude because it will certainly test you
