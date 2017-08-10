@@ -16,6 +16,5 @@ Below are some helpful tricks to spawn a TTY shell in the event you need to furt
 `perl: exec "/bin/sh";`  
 `ruby: exec "/bin/sh"`  
 `lua: os.execute('/bin/sh')`  
-When in vi - `:!bash`  
-When in vi `:set shell=/bin/bash:shell`  
+When in vi `:!bash` or `:set shell=/bin/bash:shell`  
 When in nmap - `!sh`  
