@@ -81,6 +81,7 @@ The exam is a 24 hour practical exam followed by 24 hours to submit the report. 
 #### Exam  
  - Schedule the exam halfway through your lab time so you get a feel for the exam and know where your weak points are in time to hone in on them. It’s only $60 to do a retake which is significantly cheaper than most.
  - Create a plan and stick to it, schedule breaks
+ - Have your cheat sheets ready and shells for various occasions
  - Don’t get stuck on any one machine rotate, every 3-4 hours
  - Write your report ahead of time so that you only need to add your exam notes in
  - Stick to your methodology and enumerate EVERYTHING
