@@ -26,7 +26,7 @@ Here’s the [syllabus](https://www.offensive-security.com/documentation/penetra
 *Personal answer:*  
 Expect to be taken on a very personal journey through learning, enumeration, and exploitation. You’ll spend a lot of time googling, reading blogs, researching topics, and failing… but once you get a root shell on a machine, there’s no other feeling like it! To me, this training teaches you to “think like an attacker” and enumeration more than anything else. Of course you’ll pick up technical knowledge and skillsets along the way but learning to be resourceful, relentless, and to think outside of the box is something truly special that’s offered here.
 
-# Pre-course recommendations
+## Pre-course recommendations
 
 I basically have the same answer as everyone else that has blogged about it
 
@@ -37,19 +37,19 @@ I basically have the same answer as everyone else that has blogged about it
  - Read some security books and blogs (you can see recommendations below)
  - **Do VulnHub images!** Seriously, if you haven’t already then stop reading all the reviews and do some now before you even think about signing up. If you enjoy going through them then you’ll enjoy doing OSCP. It’s basically a free taste of it before you buy.
 
-# Coursework
+## Coursework
 
 It comes with a 300+ page PDF and hours of videos. I highly recommend doing all of the exercises and any that you struggle with should be done multiple times and accompany outside research. The material is laid out well and in some cases the video has things that are not in the PDF’s so it’s good to do both. The material will give you a solid foundation but it’s only about 20% of what you’ll need to know to do the lab and exam machines. The real learning takes place on your own while you struggle to pop boxes and elevate privileges. You’ll be in all corners of the internet researching things and figuring out why a particular task isn’t being successful.
 
-# The labs
+## The labs
 
 Now this is where the real learning happens and what makes OSCP shine the brightest. You’ll have the opportunity to attack multiple networks and over 50 machines with various operating systems and configurations. The guys at Offensive Security really do a nice job of teaching you valuable lessons and building these machines. Many of the boxes can be exploited in multiple ways and varying degrees of difficulty so you have all the challenges you can imagine at your fingertips. The goal is to obtain proof.txt files off of compromised machines, obtain network-secret.txt files to unlock additional networks, and ultimately compromise the admin network. Needless to say, you won’t be bored with the options.
 
-# The exam
+## The exam
 
 The exam is a 24 hour practical exam followed by 24 hours to submit the report. During the first 24 hours, you’ll be expected to accumulate enough points (70) to pass out of 5 total machines of varying point values. I wouldn’t necessarily say that the exam machines are any more difficult than the majority of the lab machines, but it’s the time crunch that gets you. You really need a solid methodology and time management skills to pass the exam. I’m not sure of the fail rate but I feel very comfortable in saying that it’s probably high. Just about everyone that I’ve personally talked to has not passed on their first try (including myself). You shouldn’t let any of that deter you as I promise you’ll learn something out of the experience.
 
-# Recommendations
+## Recommendations
 
 #### Pre-course  
  - Attempt as many VulnHub images (see resource section) as you have time for. Try to do them on your own and if you get stuck then take a peek at the walkthroughs.
@@ -88,11 +88,11 @@ The exam is a 24 hour practical exam followed by 24 hours to submit the report. 
  - I had better luck with the higher point machines so I always started with those
  - Take a break of it all for a day or two before your exam
 
-# Resources
+## Resources
 
 Ran out of time, will add soon
 
-# Conclusion
+## Conclusion
 
 Ran out of time, will add soon
 
