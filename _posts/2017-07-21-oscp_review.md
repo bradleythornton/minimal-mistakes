@@ -66,7 +66,7 @@ The exam is a 24 hour practical exam followed by 24 hours to submit the report. 
 #### Labs  
  - Nothing is by chance, if it looks fishy then it most likely is.
  - Documentation is king, ensure you have a solid way of keeping notes as it will pay dividends later on
- - Enumerate, enumerate, enumerate, and enumerate some more. It’s not the sexiest part it certainly a requirement
+ - Enumerate, enumerate, enumerate, and enumerate some more. It’s not the sexiest part of the process but it's certainly a requirement
  - Revert the machine before you do a “real” attack against it
  - Use Metasploit to understand and become proficient with the tool but don’t rely on it. I started out using it a lot and then used it less and less as I went through the lab.
  - Focus on the low hanging fruit machines at first, the risky ports and gapingly wrong configurations. I usually had good luck with websites
@@ -91,7 +91,7 @@ The exam is a 24 hour practical exam followed by 24 hours to submit the report. 
 
 ## Resources
 
-Practice
+#### Practice  
 
 [Pushebx: Penetration Testing - Vulnerable - ISO](http://blog.pushebx.com/2011/03/penetration-testing-iso.html)  
 [Practice CTFs](http://captf.com/practice-ctf/)  
@@ -101,7 +101,7 @@ Practice
 [Exploit Exercises](https://exploit-exercises.com/)  
 [Hack This Site!](https://www.hackthissite.org/pages/programs/programs.php)  
 
-Vulnhub OSCP-like machines
+#### Vulnhub OSCP-like machines  
 
 [SickOs: 1.2](SickOs:1.2https://www.vulnhub.com/entry/sickos-12,144/)  
 [Kioptrix: 2014](Kioptrix:2014https://www.vulnhub.com/entry/kioptrix-2014-5,62/)  
@@ -115,12 +115,12 @@ Vulnhub OSCP-like machines
 [HackLAB: Vulnix](HackLAB:Vulnixhttps://www.vulnhub.com/entry/hacklab-vulnix,48/)  
 [pWnOS: 2.0](pWnOS:2.0https://www.vulnhub.com/entry/pwnos-20-pre-release,34/)  
 
-Reporting
+#### Reporting  
 
 [Offensive Security - Sample Penetration Test Report](https://www.offensive-security.com/reports/sample-penetration-testing-report.pdf)  
 [What is MagicTree](http://www.gremwell.com/what_is_magictree)  
 
-Pivoting
+#### Pivoting  
 
 [Scenario Based Infrastructure Hacktics](http://www.fuzzysecurity.com/tutorials/13.html)  
 [SSH Tunneling](http://exploit.co.il/networking/ssh-tunneling/)  
@@ -131,12 +131,12 @@ Pivoting
 [IP tables](http://www.linuxquestions.org/questions/linux-networking-3/iptables-forward-port-to-another-host-844467/)  
 [SSH Meterpreter Pivoting Technqiues](https://highon.coffee/blog/ssh-meterpreter-pivoting-techniques/)  
 
-Post Exploitation
+#### Post Exploitation  
 
 [Windows Post Exploitation](http://www.handgrep.se/repository/cheatsheets/postexploitation/WindowsPost-Exploitation.pdf)  
 [Post Exploitation Using Meterpreter](https://www.exploit-db.com/docs/18229.pdf)  
 
-Priv Esc - Win
+#### Priv Esc - Win  
 
 [Elevating Privileges](https://hackmag.com/security/elevating-privileges-to-administrative-and-further/)  
 [Privilege escalation via weak services](http://travisaltman.com/windows-privilege-escalation-via-weak-service-permissions/)  
@@ -155,7 +155,7 @@ Priv Esc - Win
 [Win Exploit Suggester Intro](https://blog.gdssecurity.com/labs/2014/7/11/introducing-windows-exploit-suggester.html)  
 [Infosec Reference](https://github.com/rmusser01/Infosec_Reference/)  
 
-Priv Esc - Nix
+#### Priv Esc - Nix  
 
 [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)  
 [Udev](http://seclists.org/fulldisclosure/2009/Apr/att-198/udev.txt)  
@@ -169,14 +169,14 @@ Priv Esc - Nix
 [Inetd](https://debian-handbook.info/browse/stable/sect.inetd.html)  
 [Introducing LinEnum](https://www.rebootuser.com/?p=1758)  
 
-Password Cracking
+#### Password Cracking  
 
 [John the Ripper Cheat Sheet](https://countuponsecurity.files.wordpress.com/2016/09/jtr-cheat-sheet.pdf)  
 [Hashcat FAQ](https://hashcat.net/wiki/doku.php?id=frequently_asked_questions)  
 [Password Crackers Cheat Sheet](https://www.unix-ninja.com/p/A_cheat-sheet_for_password_crackers)  
 [Generating Wordlists](http://netsec.ws/?p=457)  
 
-SQL
+#### SQL  
 
 [Accessing and Hacking MSSQL from Backtrack](http://www.iodigitalsec.com/accessing-and-hacking-mssql-from-backtrack-linux/)  
 [Anatomy of an attack](http://resources.infosecinstitute.com/anatomy-of-an-attack-gaining-reverse-shell-from-sql-injection/)  
@@ -184,7 +184,7 @@ SQL
 [SQL Injection Cheat Sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet)  
 [SQL Map](http://carnal0wnage.attackresearch.com/2011/03/sqlmap-with-post-requests.html)  
 
-Payloads
+#### Payloads  
 
 [Hex Values](http://stackoverflow.com/questions/1996184/all-possible-combination-for-an-hex-value-from-a-given-set-of-chars)  
 [Generating Payloads](https://www.offensive-security.com/metasploit-unleashed/generating-payloads/)  
@@ -195,7 +195,7 @@ Payloads
 [Reverse Shell Cheat Sheet](https://www.phillips321.co.uk/2012/02/05/reverse-shell-cheat-sheet/)  
 [Offset-DB](http://offset-db.com/)  
 
-Specific Exploits
+#### Specific Exploits  
 
 [LARES-ColdFusion](http://www.carnal0wnage.com/papers/LARES-ColdFusion.pdf)  
 [Hacking a domain controller](http://web.archive.org/web/20141004091538/http:/www.slaughterjames.com/blog/2012/10/23/hacking-a-domain-controller-part-1-enumeration.html)  
@@ -203,14 +203,14 @@ Specific Exploits
 [Client Side Exploits](https://www.offensive-security.com/metasploit-unleashed/client-side-exploits/)  
 [C Pointers](https://www.tutorialspoint.com/cprogramming/c_pointers.htm)  
 
-Networking
+#### Networking  
 
 [ethereal tcpdump](http://alumni.cs.ucr.edu/~marios/ethereal-tcpdump.pdf)  
 [tcpdump](https://danielmiessler.com/study/tcpdump/)  
 [traffic accounting with ip tables](https://openvz.org/Traffic_accounting_with_iptables)  
 [Netsh Commands for Windows Firewall](https://technet.microsoft.com/en-us/library/cc771920(v=ws.10).aspx)  
 
-Misc
+#### Misc  
 
 [Tactical Exploitation](https://www.exploit-db.com/docs/172.pdf)  
 [Help Beacon Peer](http://www.advancedpentest.com/help-beacon-peer)  
@@ -221,7 +221,7 @@ Misc
 [g0tmi1k github](https://github.com/g0tmi1k/)  
 [Pen Testing Cheat Sheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)  
 
-Metasploit
+#### Metasploit  
 
 [MPC](https://github.com/g0tmi1k/mpc)  
 [Converting Metasploit Modules](http://netsec.ws/?p=262)  
@@ -230,7 +230,7 @@ Metasploit
 [misc tools sheet](https://www.sans.org/security-resources/sec560/misc_tools_sheet_v1.pdf)  
 [wirting meterpreter scripts](https://www.offensive-security.com/metasploit-unleashed/writing-meterpreter-scripts/)  
 
-Recon
+#### Recon  
 
 [Information gathering](http://www.sersc.org/journals/JSE/vol5_no5_2008/6.pdf)  
 [Intelligence gathering](http://www.pentest-standard.org/index.php/Intelligence_Gathering)  
@@ -248,5 +248,5 @@ Recon
 
 ## Conclusion
 
-Ran out of time, will add soon
+I strongly recommend anyone take the OSCP if you have an interest in information security. In comparison to many of the other security certifications, this one gives you hands-on experience and isn’t just memorizing theories and definitions. It will give you a solid foundation in the penetration testing realm that can spring board into even further research and understanding. I’ve found that it gives people increased confidence to go out and participate in those CTF’s, tear apart that malware, and test exploits. An employer can be rest assured that you don’t give up easily and you have shown real effort in the security space. After all this isn’t just a 9-5 to us, this is a hobby, a passion, a mindset, a calling.
 
