@@ -91,7 +91,17 @@ The exam is a 24 hour practical exam followed by 24 hours to submit the report. 
 
 ## Resources
 
-Ran out of time, will add soon
+Practice
+
+http://blog.pushebx.com/2011/03/penetration-testing-iso.html 
+http://captf.com/practice-ctf/ 
+http://overthewire.org/wargames/ 
+http://www.amanhardikar.com/mindmaps/Practice.html 
+https://blog.g0tmi1k.com/2011/03/vulnerable-by-design/ 
+https://exploit-exercises.com/ 
+https://www.hackthissite.org/pages/programs/programs.php 
+https://www.vulnhub.com/ 
+https://www.vulnhub.com/resources/ 
 
 ## Conclusion
 
