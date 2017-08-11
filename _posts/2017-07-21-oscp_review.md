@@ -93,15 +93,159 @@ The exam is a 24 hour practical exam followed by 24 hours to submit the report. 
 
 Practice
 
-(http://blog.pushebx.com/2011/03/penetration-testing-iso.html)
+[http://blog.pushebx.com/2011/03/penetration-testing-iso.html](http://blog.pushebx.com/2011/03/penetration-testing-iso.html)
 [http://captf.com/practice-ctf/](http://captf.com/practice-ctf/)
-http://overthewire.org/wargames/ 
-http://www.amanhardikar.com/mindmaps/Practice.html 
-https://blog.g0tmi1k.com/2011/03/vulnerable-by-design/ 
-https://exploit-exercises.com/ 
-https://www.hackthissite.org/pages/programs/programs.php 
-https://www.vulnhub.com/ 
-https://www.vulnhub.com/resources/ 
+[http://overthewire.org/wargames/](http://overthewire.org/wargames/)
+[http://www.amanhardikar.com/mindmaps/Practice.html](http://www.amanhardikar.com/mindmaps/Practice.html)
+[https://blog.g0tmi1k.com/2011/03/vulnerable-by-design/](https://blog.g0tmi1k.com/2011/03/vulnerable-by-design/)
+[https://exploit-exercises.com/](https://exploit-exercises.com/)
+[https://www.hackthissite.org/pages/programs/programs.php](https://www.hackthissite.org/pages/programs/programs.php)
+
+Vulnhub OSCP-like machines
+
+[SickOs: 1.2](https://www.vulnhub.com/entry/sickos-12,144/)
+[Kioptrix: 2014](https://www.vulnhub.com/entry/kioptrix-2014-5,62/)
+[SkyTower: 1](https://www.vulnhub.com/entry/skytower-1,96/)
+[FristiLeaks: 1.3](https://www.vulnhub.com/entry/fristileaks-13,133/)
+[Stapler: 1](https://www.vulnhub.com/entry/stapler-1,150/)
+[Mr-Robot: 1](https://www.vulnhub.com/entry/mr-robot-1,151/)
+[PwnLab: init](https://www.vulnhub.com/entry/pwnlab-init,158/)
+[VulnOS: 2](https://www.vulnhub.com/entry/vulnos-2,147/)
+[Brainpan: 1](https://www.vulnhub.com/entry/brainpan-1,51/)
+[HackLAB: Vulnix](https://www.vulnhub.com/entry/hacklab-vulnix,48/)
+[pWnOS: 2.0](https://www.vulnhub.com/entry/pwnos-20-pre-release,34/)
+
+
+Reporting
+
+[https://www.offensive-security.com/reports/sample-penetration-testing-report.pdf](https://www.offensive-security.com/reports/sample-penetration-testing-report.pdf)
+[http://www.gremwell.com/what_is_magictree](http://www.gremwell.com/what_is_magictree)
+
+Pivoting
+
+[http://www.fuzzysecurity.com/tutorials/13.html](http://www.fuzzysecurity.com/tutorials/13.html)
+[http://exploit.co.il/networking/ssh-tunneling/](http://exploit.co.il/networking/ssh-tunneling/)
+[http://www.pc-freak.net/blog/creating-ssh-tunnel-windows-plink/](http://www.pc-freak.net/blog/creating-ssh-tunnel-windows-plink/)
+[http://superuser.com/questions/96489/an-ssh-tunnel-via-multiple-hops](http://superuser.com/questions/96489/an-ssh-tunnel-via-multiple-hops)
+[http://sshmenu.sourceforge.net/articles/transparent-mulithop.html](http://sshmenu.sourceforge.net/articles/transparent-mulithop.html)
+[https://www.sans.org/reading-room/whitepapers/testing/tunneling-pivoting-web-application-penetration-testing-36117](https://www.sans.org/reading-room/whitepapers/testing/tunneling-pivoting-web-application-penetration-testing-36117)
+[http://www.linuxquestions.org/questions/linux-networking-3/iptables-forward-port-to-another-host-844467/](http://www.linuxquestions.org/questions/linux-networking-3/iptables-forward-port-to-another-host-844467/)
+[https://highon.coffee/blog/ssh-meterpreter-pivoting-techniques/](https://highon.coffee/blog/ssh-meterpreter-pivoting-techniques/)
+
+Post Exploitation
+
+[http://www.handgrep.se/repository/cheatsheets/postexploitation/WindowsPost-Exploitation.pdf](http://www.handgrep.se/repository/cheatsheets/postexploitation/WindowsPost-Exploitation.pdf)
+[https://www.exploit-db.com/docs/18229.pdf](https://www.exploit-db.com/docs/18229.pdf)
+
+Priv Esc - Win
+
+[https://hackmag.com/security/elevating-privileges-to-administrative-and-further/](https://hackmag.com/security/elevating-privileges-to-administrative-and-further/)
+[http://travisaltman.com/windows-privilege-escalation-via-weak-service-permissions/](http://travisaltman.com/windows-privilege-escalation-via-weak-service-permissions/)
+[http://toshellandback.com/2015/11/24/ms-priv-esc/](http://toshellandback.com/2015/11/24/ms-priv-esc/)
+[http://www.fuzzysecurity.com/tutorials/16.html](http://www.fuzzysecurity.com/tutorials/16.html)
+[https://github.com/pentestmonkey/windows-privesc-check](https://github.com/pentestmonkey/windows-privesc-check)
+[http://pentestmonkey.net/blog/post-exploitation-without-a-tty](http://pentestmonkey.net/blog/post-exploitation-without-a-tty)
+[http://www.desmoulins.fr/index_us.php?pg=informatique!linux!console!winexe](http://www.desmoulins.fr/index_us.php?pg=informatique!linux!console!winexe)
+[https://www.exploit-db.com/dll-hijacking-vulnerable-applications/](https://www.exploit-db.com/dll-hijacking-vulnerable-applications/)
+[https://www.offensive-security.com/metasploit-unleashed/portfwd/](https://www.offensive-security.com/metasploit-unleashed/portfwd/)
+[http://www.madirish.net/370](http://www.madirish.net/370)
+[http://superuser.com/questions/515175/create-admin-user-from-command-line](http://superuser.com/questions/515175/create-admin-user-from-command-line)
+[https://github.com/GDSSecurity/Windows-Exploit-Suggester/blob/master/windows-exploit-suggester.py](https://github.com/GDSSecurity/Windows-Exploit-Suggester/blob/master/windows-exploit-suggester.py)
+[http://blog.cobaltstrike.com/2014/03/20/user-account-control-what-penetration-testers-should-know/](http://blog.cobaltstrike.com/2014/03/20/user-account-control-what-penetration-testers-should-know/)
+[http://www.labofapenetrationtester.com/2015/09/bypassing-uac-with-powershell.html](http://www.labofapenetrationtester.com/2015/09/bypassing-uac-with-powershell.html)
+[https://blog.gdssecurity.com/labs/2014/7/11/introducing-windows-exploit-suggester.html](https://blog.gdssecurity.com/labs/2014/7/11/introducing-windows-exploit-suggester.html)
+[https://github.com/rmusser01/Infosec_Reference/](https://github.com/rmusser01/Infosec_Reference/)
+
+Priv Esc - Nix
+
+[https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
+[http://seclists.org/fulldisclosure/2009/Apr/att-198/udev.txt](http://seclists.org/fulldisclosure/2009/Apr/att-198/udev.txt)
+[http://www.rebootuser.com/?p=1623](http://www.rebootuser.com/?p=1623)
+[http://oss.sgi.com/LDP/HOWTO/Net-HOWTO/x635.html](http://oss.sgi.com/LDP/HOWTO/Net-HOWTO/x635.html)
+[https://github.com/ngalongc/AutoLocalPrivilegeEscalation](https://github.com/ngalongc/AutoLocalPrivilegeEscalation)
+[http://securebean.blogspot.com/2014/05/escaping-restricted-shell_3.html](http://securebean.blogspot.com/2014/05/escaping-restricted-shell_3.html)
+[http://www.slideshare.net/nullthreat/fund-linux-priv-esc-wprotections](http://www.slideshare.net/nullthreat/fund-linux-priv-esc-wprotections)
+[https://github.com/rebootuser/LinEnum](https://github.com/rebootuser/LinEnum)
+[http://www.darknet.org.uk/2014/11/linenum-linux-enumeration-privilege-escalation-tool/](http://www.darknet.org.uk/2014/11/linenum-linux-enumeration-privilege-escalation-tool/)
+[https://debian-handbook.info/browse/stable/sect.inetd.html](https://debian-handbook.info/browse/stable/sect.inetd.html)
+[https://www.rebootuser.com/?p=1758](https://www.rebootuser.com/?p=1758)
+
+Password Cracking
+
+[https://countuponsecurity.files.wordpress.com/2016/09/jtr-cheat-sheet.pdf](https://countuponsecurity.files.wordpress.com/2016/09/jtr-cheat-sheet.pdf)
+[https://hashcat.net/wiki/doku.php?id=frequently_asked_questions](https://hashcat.net/wiki/doku.php?id=frequently_asked_questions)
+[https://www.unix-ninja.com/p/A_cheat-sheet_for_password_crackers](https://www.unix-ninja.com/p/A_cheat-sheet_for_password_crackers)
+[http://netsec.ws/?p=457](http://netsec.ws/?p=457)
+
+SQL
+
+[http://www.iodigitalsec.com/accessing-and-hacking-mssql-from-backtrack-linux/](http://www.iodigitalsec.com/accessing-and-hacking-mssql-from-backtrack-linux/)
+[http://resources.infosecinstitute.com/anatomy-of-an-attack-gaining-reverse-shell-from-sql-injection/](http://resources.infosecinstitute.com/anatomy-of-an-attack-gaining-reverse-shell-from-sql-injection/)
+[https://www.exploit-db.com/docs/12622.pdf](https://www.exploit-db.com/docs/12622.pdf)
+[http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet)
+[http://carnal0wnage.attackresearch.com/2011/03/sqlmap-with-post-requests.html](http://carnal0wnage.attackresearch.com/2011/03/sqlmap-with-post-requests.html)
+
+Payloads
+
+[http://stackoverflow.com/questions/1996184/all-possible-combination-for-an-hex-value-from-a-given-set-of-chars](http://stackoverflow.com/questions/1996184/all-possible-combination-for-an-hex-value-from-a-given-set-of-chars)
+[https://www.offensive-security.com/metasploit-unleashed/generating-payloads/](https://www.offensive-security.com/metasploit-unleashed/generating-payloads/)
+[http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
+[http://www.gnucitizen.org/blog/reverse-shell-with-bash/](http://www.gnucitizen.org/blog/reverse-shell-with-bash/)
+[https://www.youtube.com/watch?v=v1OXNP_bl8U](https://www.youtube.com/watch?v=v1OXNP_bl8U)
+[https://community.rapid7.com/thread/2082](https://community.rapid7.com/thread/2082)
+[https://www.phillips321.co.uk/2012/02/05/reverse-shell-cheat-sheet/](https://www.phillips321.co.uk/2012/02/05/reverse-shell-cheat-sheet/)
+[http://offset-db.com/](http://offset-db.com/)
+
+Specific Exploits
+
+[http://www.carnal0wnage.com/papers/LARES-ColdFusion.pdf](http://www.carnal0wnage.com/papers/LARES-ColdFusion.pdf)
+[http://web.archive.org/web/20141004091538/http:/www.slaughterjames.com/blog/2012/10/23/hacking-a-domain-controller-part-1-enumeration.html](http://web.archive.org/web/20141004091538/http:/www.slaughterjames.com/blog/2012/10/23/hacking-a-domain-controller-part-1-enumeration.html)
+[https://adsecurity.org/?p=556](https://adsecurity.org/?p=556)
+[https://www.offensive-security.com/metasploit-unleashed/client-side-exploits/](https://www.offensive-security.com/metasploit-unleashed/client-side-exploits/)
+[https://www.tutorialspoint.com/cprogramming/c_pointers.htm](https://www.tutorialspoint.com/cprogramming/c_pointers.htm)
+
+Networking
+
+[http://alumni.cs.ucr.edu/~marios/ethereal-tcpdump.pdf](http://alumni.cs.ucr.edu/~marios/ethereal-tcpdump.pdf)
+[https://danielmiessler.com/study/tcpdump/](https://danielmiessler.com/study/tcpdump/)
+[https://openvz.org/Traffic_accounting_with_iptables](https://openvz.org/Traffic_accounting_with_iptables)
+[https://technet.microsoft.com/en-us/library/cc771920(v=ws.10).aspx](https://technet.microsoft.com/en-us/library/cc771920(v=ws.10).aspx)
+
+Misc
+
+[https://www.exploit-db.com/docs/172.pdf](https://www.exploit-db.com/docs/172.pdf)
+[http://www.advancedpentest.com/help-beacon-peer](http://www.advancedpentest.com/help-beacon-peer)
+[http://blog.cobaltstrike.com/2013/12/06/stealthy-peer-to-peer-cc-over-smb-pipes/](http://blog.cobaltstrike.com/2013/12/06/stealthy-peer-to-peer-cc-over-smb-pipes/)
+[https://github.com/samratashok/nishang/tree/master/Escalation](https://github.com/samratashok/nishang/tree/master/Escalation)
+[http://www.powershellempire.com/](http://www.powershellempire.com/)
+[https://jivoi.github.io/2015/07/01/pentest-tips-and-tricks/](https://jivoi.github.io/2015/07/01/pentest-tips-and-tricks/)
+[https://github.com/g0tmi1k/](https://github.com/g0tmi1k/)
+[https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
+
+Metasploit
+
+[https://github.com/g0tmi1k/mpc](https://github.com/g0tmi1k/mpc)
+[http://netsec.ws/?p=262](http://netsec.ws/?p=262)
+[https://www.offensive-security.com/metasploit-unleashed/msfconsole-commands/](https://www.offensive-security.com/metasploit-unleashed/msfconsole-commands/)
+[https://www.offensive-security.com/metasploit-unleashed/msfcli/](https://www.offensive-security.com/metasploit-unleashed/msfcli/)
+[https://www.sans.org/security-resources/sec560/misc_tools_sheet_v1.pdf](https://www.sans.org/security-resources/sec560/misc_tools_sheet_v1.pdf)
+[https://www.offensive-security.com/metasploit-unleashed/writing-meterpreter-scripts/](https://www.offensive-security.com/metasploit-unleashed/writing-meterpreter-scripts/)
+
+Recon
+
+[http://www.sersc.org/journals/JSE/vol5_no5_2008/6.pdf](http://www.sersc.org/journals/JSE/vol5_no5_2008/6.pdf)
+[http://www.pentest-standard.org/index.php/Intelligence_Gathering](http://www.pentest-standard.org/index.php/Intelligence_Gathering)
+[http://bencane.com/2013/02/25/10-nmap-commands-every-sysadmin-should-know/](http://bencane.com/2013/02/25/10-nmap-commands-every-sysadmin-should-know/)
+[http://resources.infosecinstitute.com/nmap-cheat-sheet-discovery-exploits-part-2-advance-port-scanning-nmap-custom-idle-scan/](http://resources.infosecinstitute.com/nmap-cheat-sheet-discovery-exploits-part-2-advance-port-scanning-nmap-custom-idle-scan/)
+[https://media.blackhat.com/bh-us-11/Arsenal/BH_US_11_Nitrous_DotDotPwn_Slides.pdf](https://media.blackhat.com/bh-us-11/Arsenal/BH_US_11_Nitrous_DotDotPwn_Slides.pdf)
+[https://support.microsoft.com/en-us/kb/142982](https://support.microsoft.com/en-us/kb/142982)
+[http://security.stackexchange.com/questions/110673/how-to-find-windows-version-from-the-file-on-a-remote-system](http://security.stackexchange.com/questions/110673/how-to-find-windows-version-from-the-file-on-a-remote-system)
+[http://carnal0wnage.attackresearch.com/2007/07/enumerating-user-accounts-on-linux-and.html](http://carnal0wnage.attackresearch.com/2007/07/enumerating-user-accounts-on-linux-and.html)
+[https://scottlinux.com/2012/07/12/create-html-reports-with-nikto-web-server-scanner/](https://scottlinux.com/2012/07/12/create-html-reports-with-nikto-web-server-scanner/)
+[https://curl.haxx.se/docs/httpscripting.html](https://curl.haxx.se/docs/httpscripting.html)
+[http://resources.infosecinstitute.com/nmap-cheat-sheet-5-the-final-view-of-a-ninja-pentester/](http://resources.infosecinstitute.com/nmap-cheat-sheet-5-the-final-view-of-a-ninja-pentester/)
+[https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps](https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps)
+[http://www.securitysift.com/offsec-pwb-oscp/](http://www.securitysift.com/offsec-pwb-oscp/)
 
 ## Conclusion
 
