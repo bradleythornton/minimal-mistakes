@@ -30,7 +30,7 @@ Here's a view of these values in Immunity
 ![EIP & ESP Example](/assets/images/eip_esp_example.jpg)
 
 There are two basic tactics when attempting at controlling the EIP  
-*Binary Tree Analysis* (manual way) - essentially you split the buffer in a series of same characterws until you notice the EIP getting over-written
+*Binary Tree Analysis* (manual way) - essentially you split the buffer in a series of same characters until you notice the EIP getting over-written
 Example: AAAAAAAAAABBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDD
 
 *Unique String* (automated way) - send a unique string so you can see which 4 bytes are written in the EIP.
@@ -46,7 +46,7 @@ Naturally you are going to want to use the Unique String Method whenever possibl
 - Use pattern\_offset.rb to find the position from your pattern\_create script
   - Usage: `pattern-offset.rb 13731415` <--EIP value from crash
 - It should return your location (something like 1403). This means that on the 1404th byte is where you can direct EIP. A good way to test this is to send a certain amount of A&#39;s, B&#39;s, and C&#39;s to see where the values are located
-  - Example: buffer = &quot;A&quot;\*1403 + &quot;B&quot;\*4 + &quot;C&quot;\*793 &lt;----last part is to fulfill the orginial 2200 buffer
+  - Example: buffer = &quot;A&quot;\*1403 + &quot;B&quot;\*4 + &quot;C&quot;\*793 &lt;----last part is to fulfill the original 2200 buffer
 
 **(Optional) Increase the buffer size to allow room for shellcode**
 
@@ -112,3 +112,16 @@ You&#39;re ready to fire off your exploit! I recommend setting a breakpoint at t
   - Usage: `nc –lvp <PORT NUMBER>`  
 - Fire off your script and if everything works right you should be presented with a reverse shell from your target  
 ![Reverse Shell](/assets/images/shell.jpg)  
+
+**Fuzz the application**  
+
+These are just my notes and may or may not work for you. What really taught me was going through other hackers processes and picking out the pieces that I resonated  with the most and creating my own process. Setting out an outline, like below, will at least keep you on track and give you enough of an idea to know what to do next.
+
+**High-level Structure**
+- Check to see if application is vulnerable by using a fuzzer (increments buffer until crash)
+- Find out what part of the buffer overwrites EIP
+- Increase buffer size to allow room for shellcode
+- Discover bad characters that would break your shellcode
+- Redirect EIP
+- Generate Shellcode
+- Exploit
