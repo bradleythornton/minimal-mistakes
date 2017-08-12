@@ -20,20 +20,20 @@ If you don&#39;t have access to the code and there aren&#39;t any publicly discl
 
 **Find out which part of the buffer overwrites EIP**
 
-So you'll need to know a few key pieces of controlling EIP
+So you'll need to know a few key pieces of controlling EIP to figure out exactly what we're doing here
 
-The EIP (Extended Instruction Pointer) register controls the execution flow of the application. Think of it as a steering wheel of a car, you can direct it where to go.
+The **EIP** (*Extended Instruction Pointer*) register controls the execution flow of the application. Think of it as a steering wheel of a car, you can direct it where to go.
 
-The ESP (Extended Stack Pointer) is an indirect memory operand pointing to the top of the stack. This is the point where the instructions that use the stack, actually use it.
+The **ESP** (*Extended Stack Pointer*) is an indirect memory operand pointing to the top of the stack. This is the point where the instructions that use the stack, actually use it.
 
-Here are a view of these values in Immunity  
+Here's a view of these values in Immunity  
 ![EIP & ESP Example](/assets/images/eip_esp_example.jpg)
 
-There are two basic tactics when attempting at controlling the EIP
-Binary Tree Analysis (manual way) - essentially you split the buffer in a series of same characterws until you notice the EIP getting over-written
+There are two basic tactics when attempting at controlling the EIP  
+*Binary Tree Analysis* (manual way) - essentially you split the buffer in a series of same characterws until you notice the EIP getting over-written
 Example: AAAAAAAAAABBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDD
 
-Unique String (automated way) - send a unique string so you can see which 4 bytes are written in the EIP.
+*Unique String* (automated way) - send a unique string so you can see which 4 bytes are written in the EIP.
 Example: Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4
 
 Naturally you are going to want to use the Unique String Method whenever possible as it can cut down on discovery time and possibly lead to fewer mistakes.
@@ -46,7 +46,7 @@ Naturally you are going to want to use the Unique String Method whenever possibl
 - Use pattern\_offset.rb to find the position from your pattern\_create script
   - Usage: `pattern-offset.rb 13731415` <--EIP value from crash
 - It should return your location (something like 1403). This means that on the 1404th byte is where you can direct EIP. A good way to test this is to send a certain amount of A&#39;s, B&#39;s, and C&#39;s to see where the values are located
-  - Example: buffer = &quot;A&quot;\*1403 + &quot;B&quot;\*4 + &quot;C&quot;\*793 &lt;----the last part is to fulfill the orginial 2200 buffer
+  - Example: buffer = &quot;A&quot;\*1403 + &quot;B&quot;\*4 + &quot;C&quot;\*793 &lt;----last part is to fulfill the orginial 2200 buffer
 
 **(Optional) Increase the buffer size to allow room for shellcode**
 
