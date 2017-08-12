@@ -113,11 +113,11 @@ You&#39;re ready to fire off your exploit! I recommend setting a breakpoint at t
 - Fire off your script and if everything works right you should be presented with a reverse shell from your target  
 ![Reverse Shell](/assets/images/shell.jpg)  
 
-**Fuzz the application**  
+**Conclusion**  
 
 These are just my notes and may or may not work for you. What really taught me was going through other hackers processes and picking out the pieces that I resonated  with the most and creating my own process. Setting out an outline, like below, will at least keep you on track and give you enough of an idea to know what to do next.
 
-**High-level Structure**
+****High-level Structure****
 - Check to see if application is vulnerable by using a fuzzer (increments buffer until crash)
 - Find out what part of the buffer overwrites EIP
 - Increase buffer size to allow room for shellcode
