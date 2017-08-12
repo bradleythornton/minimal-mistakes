@@ -30,13 +30,13 @@ Here's a view of these values in Immunity
 ![EIP & ESP Example](/assets/images/eip_esp_example.jpg)
 
 There are two basic tactics when attempting at controlling the EIP  
-*Binary Tree Analysis* (manual way) - essentially you split the buffer in a series of same characters until you notice the EIP getting over-written
+- **Binary Tree Analysis** (manual way) - essentially you split the buffer in a series of same characters until you notice the EIP getting over-written  
 Example: AAAAAAAAAABBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDD
 
-*Unique String* (automated way) - send a unique string so you can see which 4 bytes are written in the EIP.
+- **Unique String** (automated way) - send a unique string so you can see which 4 bytes are written in the EIP.  
 Example: Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4
 
-Naturally you are going to want to use the Unique String Method whenever possible as it can cut down on discovery time and possibly lead to fewer mistakes.
+Naturally you'll want to use the Unique String Method whenever possible as it cuts down on discovery time and could lead to fewer mistakes.
 
 - Create a unique string that's the size of your buffer (pattern\_create.rb is great for this, comes with Kali!)
   - Usage: `pattern\_create.rb 2200` <-- size of your buffer
