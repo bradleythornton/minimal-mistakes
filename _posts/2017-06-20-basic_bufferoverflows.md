@@ -77,7 +77,7 @@ To me this can be the most frustrating part of the process and often where peopl
 - Remove the character from the buffer and continue until you&#39;ve completed them all
 
 Example  
-![Bad Characters](/assets/images/badchars.jpg)  
+![Bad Characters](/assets/images/badchars.JPG)  
 
 **Redirect EIP**
 
