@@ -96,10 +96,10 @@ Discover type of hash that you have
 `hashcat -m 400 -a 0 <HASH FILE> <WORD LIST>`  
 
 #### TTY Shells  
-See shells section
+See [TTY Shells](http://thor-sec.com/cheatsheet/tty_spawnage/) section  
 
 #### Metaplsoit Payloads  
-See msfvenom cheat sheet
+See [msfvenom cheat sheet](http://thor-sec.com/cheatsheet/msfvenom_cheat_sheet/) section  
 
 #### Metasploit commands  
 `sysinfo`  
@@ -127,7 +127,7 @@ See msfvenom cheat sheet
 - `sessions -u 1` (the 1 is the session number)
 
 #### Netcat  
-See netcat cheat sheet
+See [Netcat cheat sheet](http://thor-sec.com/cheatsheet/netcat_cheatsheet/) section  
 
 #### Useful Windows Commands  
 `net view`  
