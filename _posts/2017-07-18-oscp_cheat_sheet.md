@@ -177,7 +177,7 @@ Symlinks and their pointers
 `ftp -s:script.txt`  
 
 #### Shells  
-See [resources section](/thor-sec/_posts/2017-07-21-oscp_review.md)  
+See [resources section](http://thor-sec.com/review/oscp_review/#resource)  
 [Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)  
 
 # Post  
