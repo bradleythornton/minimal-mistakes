@@ -16,22 +16,34 @@ _I&#39;ll go and make this look pretty and add pictures later but this should ge
 If you don&#39;t have access to the code and there aren&#39;t any publicly disclosed exploits then another viable option is to fuzz the application and see what happens. Fuzzing is essentially the act of sending malformed or unintended data to an application and watching to see if it behaves abnormally such as crashing. Keep in mind that just because you cause an application to crash doesn&#39;t necessarily mean that it&#39;s vulnerable but it should key you into paying closer attention to it.
 
 - Run the application
-- Attach the debugger (Immunity is a good option) to the application
+- Attach the debugger ([Immunity Debugger](https://www.immunityinc.com/products/debugger/) is a good option) to the application
 - Run your fuzzer
 - Write a script to replicate the crash (this is where you&#39;ll set the size of the buffer)
 
 **Find out which part of the buffer overwrites EIP**
 
-Explain EIP and ESP
+So you'll need to know a few key pieces of controlling EIP
 
-Explain static tree analysis
+The EIP (Extended Instruction Pointer) register controls the execution flow of the application. Think of it as a steering wheel of a car, you can direct it where to go.
 
-- Create a unique string that&#39;s the size of your buffer (pattern\_create.rb is great for this, comes with Kali!)
-  - Usage: pattern\_create.rb 2200 &lt;-- size of your buffer
+The ESP (Extended Stack Pointer) is an indirect memory operand pointing to the top of the stack. This is the point where the instructions that use the stack, actually use it.
+
+There are two basic tactics when attempting at controlling the EIP
+Binary Tree Analysis (manual way) - essentially you split the buffer in a series of same characterws until you notice the EIP getting over-written
+Example: AAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDD
+
+Unique String (automated way) - send a unique string so you can see which 4 bytes are written in the EIP.
+Example: Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4
+
+Naturally you are going to want to use the Unique String Method whenever possible as it can cut down on discovery time and possibly lead to fewer mistakes.
+
+
+- Create a unique string that's the size of your buffer (pattern\_create.rb is great for this, comes with Kali!)
+  - Usage: `pattern\_create.rb 2200` <-- size of your buffer
 - Place the output inside your script
-- Run script and locate EIP&#39;s bytes
+- Run script and locate EIP's bytes
 - Use pattern\_offset.rb to find the position from your pattern\_create script
-  - Usage: pattern-offset.rb 13731415 &lt;--EIP value from crash
+  - Usage: `pattern-offset.rb 13731415` <--EIP value from crash
 - It should return your location (something like 1403). This means that on the 1404th byte is where you can direct EIP. A good way to test this is to send a certain amount of A&#39;s, B&#39;s, and C&#39;s to see where the values are located
   - Example: buffer = &quot;A&quot;\*1403 + &quot;B&quot;\*4 + &quot;C&quot;\*793 &lt;----the last part is to fulfill the orginial 2200 buffer
 
