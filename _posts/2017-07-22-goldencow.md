@@ -1,6 +1,6 @@
 ---
-title:  "Fighting the good fight"
-header: "Fighting the good fight"
+title:  "Fighting the Good Fight"
+header: "Fighting the Good Fight"
 categories: 
   - Rant
 tags:
