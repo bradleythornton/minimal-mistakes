@@ -123,5 +123,5 @@ These are just my notes and may or may not work for you. What really taught me w
 - Increase buffer size to allow room for shellcode
 - Discover bad characters that would break your shellcode
 - Redirect EIP
-- Generate Shellcode
+- Generate shellcode
 - Exploit
