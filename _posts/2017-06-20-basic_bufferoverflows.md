@@ -26,7 +26,7 @@ The EIP (Extended Instruction Pointer) register controls the execution flow of t
 
 The ESP (Extended Stack Pointer) is an indirect memory operand pointing to the top of the stack. This is the point where the instructions that use the stack, actually use it.
 
-Here are a view of these values in Immunity
+Here are a view of these values in Immunity  
 ![EIP & ESP Example](/assets/images/eip_esp_example.jpg)
 
 There are two basic tactics when attempting at controlling the EIP
@@ -41,7 +41,7 @@ Naturally you are going to want to use the Unique String Method whenever possibl
 - Create a unique string that's the size of your buffer (pattern\_create.rb is great for this, comes with Kali!)
   - Usage: `pattern\_create.rb 2200` <-- size of your buffer
 - Place the output inside your script
-- Run script and locate EIP's bytes
+- Run script and locate EIP's bytes  
 ![EIP](/assets/images/eip.jpg)
 - Use pattern\_offset.rb to find the position from your pattern\_create script
   - Usage: `pattern-offset.rb 13731415` <--EIP value from crash
@@ -76,7 +76,7 @@ To me this can be the most frustrating part of the process and often where peopl
 - Discover where the increments are broken, malformed, omitted
 - Remove the character from the buffer and continue until you&#39;ve completed them all
 
-Example
+Example  
 ![Bad Characters](/assets/images/badchars.jpg)  
 
 **Redirect EIP**
@@ -88,9 +88,9 @@ When the application starts each time you&#39;ll notice that your pointers are a
   - Search for jmp esp in the whole DLL
   - If you can&#39;t find one then the nasm\_shell command is FFE4 and you should search for that using mona.py
     - Usage: `!mona find –s "\xff\xe4" –m <vulnerable module>`  
-    - ![Mona](/assets/images/mona.jpg)  
-  - Test and place the location within your fuzzer
-  - ![JMP ESP](/assets/images/jmp_esp.jpg)  
+![Mona](/assets/images/mona.jpg)  
+  - Test and place the location within your fuzzer  
+![JMP ESP](/assets/images/jmp_esp.jpg)  
 
 By redirecting the EIP to our newly found address, at the time of the crash, a JMP ESP instruction will be executed, which will lead the execution flow into our shellcode
 
@@ -110,5 +110,5 @@ You&#39;re ready to fire off your exploit! I recommend setting a breakpoint at t
 
 - Set up a listener on the port number that you chose
   - Usage: `nc –lvp <PORT NUMBER>`  
-- Fire off your script and if everything works right you should be presented with a reverse shell from your target
+- Fire off your script and if everything works right you should be presented with a reverse shell from your target  
 ![Reverse Shell](/assets/images/shell.jpg)  
