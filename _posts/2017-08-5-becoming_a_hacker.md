@@ -1,5 +1,6 @@
 ---
 title:  "Getting Started As A Hacker"
+comments: true
 header: "Getting Started As A Hacker"
 categories: 
   - HowTo
