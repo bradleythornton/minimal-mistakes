@@ -9,6 +9,8 @@ tags:
 
 Anyone in InfoSec always gets asked this question, “How do I become a hacker” and “Where do I start”. I’ve been getting it an abnormal amount as of late so I figured I would put up a post to save some time.  
 
+{% include toc title="Table of Contents" icon="file-text" %}
+
 Simply put, the only thing you need in order to become a hacker is time, patience, and a willingness to learn. I’m a firm believer that some people are just naturally born to be hackers as they have a thirst for knowledge, continually push the envelope, and constantly ask themselves “I wonder what would happen if I were to do this…”.  
 
 ## What is a hacker?  
