@@ -242,7 +242,6 @@ The exam is a 24 hour practical exam followed by 24 hours to submit the report. 
 [Enumerating user accounts](http://carnal0wnage.attackresearch.com/2007/07/enumerating-user-accounts-on-linux-and.html)  
 [Nikto](https://scottlinux.com/2012/07/12/create-html-reports-with-nikto-web-server-scanner/)  
 [httpscripting](https://curl.haxx.se/docs/httpscripting.html)  
-[Nmap cheat sheet](http://resources.infosecinstitute.com/nmap-cheat-sheet-5-the-final-view-of-a-ninja-pentester/)  
 [Netcat](https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps)  
 [Offsec PWB OSCP Experience](http://www.securitysift.com/offsec-pwb-oscp/)  
 
