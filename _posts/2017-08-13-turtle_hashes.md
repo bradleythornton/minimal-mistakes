@@ -62,7 +62,7 @@ To view the captured credentials, you can plug the Turtle back into your machine
 
 Within the file you should be presented with something similar to the below line  
 
-`User1::domain1:58ca42bcd7ea58ee:12dcce4246268262a153b5064d58dac6:5c78dcs3153d840d11100000000000c45467103d4777bb5a2d12f1a11230c0000000062920b25fa8da13c31cdb3b72f5c715c713010`  
+```User1::domain1:58ca42bcd7ea58ee:12dcce4246268262a153b5064d58dac6:5c78dcs3153d840d11100000000000c45467103d4777bb5a2d12f1a11230c0000000062920b25fa8da13c31cdb3b72f5c715c713010```  
 
 The User1 section is the username and the domain1 section is the domain in which the machine is located on. The following information is the hash that you would most likely throw into hashcat or use within your favorite hash cracking method.  
 
