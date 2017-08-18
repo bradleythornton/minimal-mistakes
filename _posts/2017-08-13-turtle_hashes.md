@@ -7,7 +7,7 @@ tags:
   - lanturtle
   - hashes
 ---
-When you hear that you can steal user hashes from locked machines, everyone’s ears perk up. This attack vector has been around for almost a year now, which surprised me several pen testers/security experts were either totally unaware or not utilizing it in their physical penetration exercises. Below I’ll try my hand at explaining the attack as well as my experience with conducting it.  
+When you hear that you can steal user hashes from locked machines, everyone’s ears perk up. This attack vector has been around for almost a year now, which surprised me that several pen testers/security experts were either totally unaware or not utilizing it in their physical penetration exercises. Below I’ll try my hand at explaining the attack as well as my experience with conducting it.  
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
