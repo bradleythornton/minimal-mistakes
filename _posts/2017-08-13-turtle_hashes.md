@@ -35,7 +35,7 @@ But it’s always nice to have options… If you have the extra money to fork ov
 
 This was my first time using the Turtle so I had to go through the setup process and download the various modules. I think it’s important to wade through the documentation and setup videos offered on their [wiki](https://lanturtle.com/wiki/#!index.md), so that you understand all the options/functionality that comes with it. The documentation is laid out well and it’s easy to follow, so don’t skip this step, go explore it. With that being said, I won’t offer instructions on the Turtle setup. However, we will go over the specifics to this attack.  
 
-I recommend installing all the modules that are offered so that you can have them readily available anytime you want to play around with them. Once you have the modules, the Hak5 guys were nice enough to create a module for this exercise called “QuickCreds”.  
+I recommend installing all the modules that are offered so that you can have them readily available anytime you want to play around with them. Once you have them, the Hak5 guys were nice enough to create a module for this exercise called “QuickCreds”.  
 
 ### Setup  
 
