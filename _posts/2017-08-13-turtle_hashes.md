@@ -24,7 +24,8 @@ This attack appears to have been first published on [Mubix’s site](https://roo
 # Tools  
 ***
 
-[Hak5 LAN Turtle](https://hakshop.com/collections/lan-turtle/products/lan-turtle)
+Only a [Hak5 LAN Turtle](https://hakshop.com/collections/lan-turtle/products/lan-turtle)
+
 But it’s always nice to have options… If you have the extra money to fork over, then you can accomplish this with a [USB Armory](https://inversepath.com/usbarmory). I personally haven’t used it for this attack but have read of its success. There are some trade offs, it doesn’t look as inconspicuous as the Turtle but it does offer more development control.  
 
 # Process  
