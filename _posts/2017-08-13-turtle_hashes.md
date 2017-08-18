@@ -72,9 +72,10 @@ Since Hak5 was kind enough to script this into a module, it made this exercise a
 
 # Take-A-Ways  
 
+ - Combining this with other attack methods (the Turtle can offer a shell back to you!) offer a ton of options and attacking scenarios to conduct  
  - Since just about every OS is going to trust Ethernet/LAN and employees typically need a USB, it would difficult to find an enterprise level defense solution. Thusly, this is going to increase your chances at advancing your physical pen test.  
  - This is super simple to carry out and usually can be done within 30 seconds. The LAN Turtle disguises itself nicely which is certainly a perk for going for the cheaper option.  
- - Combining this with other attack methods (the Turtle can offer a shell back to you!) offer a ton of options and attacking scenarios to conduct  
+ - Depending on the hash that you've obtained, you could attempt a pass-the-hash type attack and not even bother with cracking
 
 # Great Resource  
 
