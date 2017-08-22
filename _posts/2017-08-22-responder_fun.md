@@ -15,13 +15,13 @@ While researching some ways in which to obtain Domain Admin within an organizati
 
 The process is relatively simple  
 - Start a rogue HTTP & SMB service  
--- Capture NETNTLM hashes by LLMNR & NBT-NS poisoning  
+ - Capture NETNTLM hashes by LLMNR & NBT-NS poisoning  
 - Crack the recently discovered hashes  
--- Use dictionary based hash cracking to allow for asset login access  
+ - Use dictionary based hash cracking to allow for asset login access  
 - Harvest credentials on acquired asset  
--- Pull cleartext passwords from memory, SAM file, and Active Directory MSCACHE cached credentials  
+ - Pull cleartext passwords from memory, SAM file, and Active Directory MSCACHE cached credentials  
 - Move laterally for domain admin credentials  
--- Login with newly acquired credentials and harvest credentials until Domain Administrator credentials have been obtained  
+ - Login with newly acquired credentials and harvest credentials until Domain Administrator credentials have been obtained  
 
 The steps are as follows  
 - Obtain NETNTLM hashes by poisoning  
