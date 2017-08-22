@@ -9,9 +9,9 @@ tags:
 
 While researching some ways in which to obtain Domain Admin within an organization, I started playing around with Responder and figured I would share a quick walkthrough. Some of these methods are a bit dated but after talking with various pen testers and red teamers, they're still applicable even today.  
 
-{% include toc title="Table of Contents" icon="file-text" %}  
-
 ## Overview  
+
+{% include toc title="Table of Contents" icon="file-text" %}  
 
 **The process is relatively simple**  
 - Start a rogue HTTP & SMB service
@@ -52,7 +52,7 @@ Here's a simplified sketch of what we want to happen
 
 So to start our rogue HTTP & SMB service, we'll use responder  
 
-![Responder Help](/assets/images/responder_help.JPG)  
+![Responder Help](/assets/images/responder_help.jpg)  
 
 A simple example for usage would be `responder -I eth0`  
 
