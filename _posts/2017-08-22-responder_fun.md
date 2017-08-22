@@ -7,13 +7,11 @@ tags:
   - responder
 ---
 
-Fun with Responder
-
 While researching some ways in which to obtain Domain Admin within an organization, I started playing around with Responder and figured I would share a quick walkthrough. Some of these methods are a bit dated but after talking with various pen testers and red teamers, they're still applicable even today.  
 
 ## Overview  
 
-The process is relatively simple  
+**The process is relatively simple**  
 - Start a rogue HTTP & SMB service
   - Capture NETNTLM hashes by LLMNR & NBT-NS poisoning
 - Crack the recently discovered hashes
@@ -23,7 +21,7 @@ The process is relatively simple
 - Move laterally for domain admin credentials
   - Login with newly acquired credentials and harvest credentials until Domain Administrator credentials have been obtained
 
-The steps are as follows  
+**The steps are as follows**  
 - Obtain NETNTLM hashes by poisoning  
 - Crack password hashes  
 - Log into machine with cracked password  
