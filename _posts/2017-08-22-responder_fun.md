@@ -9,6 +9,8 @@ tags:
 
 While researching some ways in which to obtain Domain Admin within an organization, I started playing around with Responder and figured I would share a quick walkthrough. Some of these methods are a bit dated but after talking with various pen testers and red teamers, they're still applicable even today.  
 
+{% include toc title="Table of Contents" icon="file-text" %}  
+
 ## Overview  
 
 **The process is relatively simple**  
