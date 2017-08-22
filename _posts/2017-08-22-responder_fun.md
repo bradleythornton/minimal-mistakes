@@ -41,8 +41,8 @@ While researching some ways in which to obtain Domain Admin within an organizati
 [SMBExec](https://github.com/pentestgeek/smbexec) - which uses WCE  
 
 ## Starting a rogue HTTP & SMB service  
-*ACTION: LLMNR & NBT-NS poisoning  
-RESULT: Allows for NETNTLM hashes to be captured*  
+**ACTION:** LLMNR & NBT-NS poisoning  
+**RESULT:** Allows for NETNTLM hashes to be captured  
 
 Here's a simplified sketch of what we want to happen  
 
@@ -65,8 +65,8 @@ User is : testuser
 ```  
 
 ## Cracking the recently discovered hashes  
-ACTION: Use dictionary based hash cracking  
-RESULT: Clear text credential that will allow login access to asset  
+**ACTION:** Use dictionary based hash cracking  
+**RESULT:** Clear text credential that will allow login access to asset  
 
 For sake of example, I chose to do dictionary based cracking with Hashcat. It's simply a numbers game at this point as we will grab as many credentials as possible and throw a solid wordlist against it.  
 
@@ -80,8 +80,8 @@ Once successful, the output would look similar to below
 
 
 ## Harvest credentials on acquired asset  
-ACTION: Pull cleartext passwords from memory  
-RESULT: Additional credentials obtained to move to other assets  
+**ACTION:** Pull cleartext passwords from memory  
+**RESULT:** Additional credentials obtained to move to other assets  
 
 So at this point we have a credential, so we're just going to log into the machine and harvest additional credentials. We’ll use a tool called SMBExec to dump password hashes from the SAM file, memory, and AD MSCACHE cached credentials.  
 
@@ -102,8 +102,8 @@ Then a listing of the credentials will be dumped for you
 The best part about SMB hashes are that they can be vulnerable to pass-the-hash attacks so no need to waste the time cracking them. This works because SMB logins do not use a salt. The hash equals access to the correct response to the server challenge.  
 
 ## Move laterally for domain admin credentials  
-ACTION: Log in with acquired credentials to various assets in search for Domain Admin credentials  
-RESULT: Domain Administrator credentials acquired  
+**ACTION:** Log in with acquired credentials to various assets in search for Domain Admin credentials  
+**RESULT:** Domain Administrator credentials acquired  
 
 SMBExec has the ability to rapidly login to several assets to check for domain/enterprise admins that are logged in. So we just keep harvesting and moving onto other machines until we find what we're looking for.  
 
