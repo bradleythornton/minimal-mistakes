@@ -56,11 +56,13 @@ A simple example for usage would be `responder -I eth0`
 
 Once it's kicked off, we simply wait for the requests to pour in. Your results should resemble the below output  
 
-> `LLMNR poisoned answer sent to this IP: <IP>. The requested name was : testing123.`
-> `[+]SMB-NTLMv2 hash captured from :  <IP>`
-> `Domain is : WORKGROUP`
-> `User is : testuser`
-> `[+]SMB complete hash is : user1::WORKGROUP:<really long hash>`  
+```
+LLMNR poisoned answer sent to this IP: <IP>. The requested name was : testing123.
+[+]SMB-NTLMv2 hash captured from :  <IP>
+Domain is : WORKGROUP
+User is : testuser
+[+]SMB complete hash is : user1::WORKGROUP:<really long hash>
+```  
 
 ## Cracking the recently discovered hashes  
 ACTION: Use dictionary based hash cracking  
@@ -68,7 +70,7 @@ RESULT: Clear text credential that will allow login access to asset
 
 For sake of example, I chose to do dictionary based cracking with Hashcat. It's simply a numbers game at this point as we will grab as many credentials as possible and throw a solid wordlist against it.  
 
-![Hashcat Help](/assets/images/hashcat_help.JPG)  
+![Hashcat Help](/assets/images/hashcat_help.jpg)  
 
 ![Hashcat Usage](/assets/images/hashcat_usage.JPG)  
 
@@ -83,7 +85,7 @@ RESULT: Additional credentials obtained to move to other assets
 
 So at this point we have a credential, so we're just going to log into the machine and harvest additional credentials. We’ll use a tool called SMBExec to dump password hashes from the SAM file, memory, and AD MSCACHE cached credentials.  
 
-![SMBExec Help](/assets/images/smbexec_help.JPG)  
+![SMBExec Help](/assets/images/smbexec_help.jpg)  
 
 This tool is pretty straight forward and has menu options to guide you through the process. Once completed you should have something that looks similar to the text below  
 
@@ -95,15 +97,15 @@ Password or hash (<LM>:<NTLM>) [Pass: password] :
 Domain [domain1] :
 ```   
 
-Then a listing of the credentials dumped for you  
+Then a listing of the credentials will be dumped for you  
 
-Best part is SMB Hashes are vulnerable to pass-the-hash attacks so no need to waste the time cracking them. This works because SMB logins do not use a salt. The hash equals access to the correct response to the server challenge.  
+The best part about SMB hashes are that they can be vulnerable to pass-the-hash attacks so no need to waste the time cracking them. This works because SMB logins do not use a salt. The hash equals access to the correct response to the server challenge.  
 
 ## Move laterally for domain admin credentials  
 ACTION: Log in with acquired credentials to various assets in search for Domain Admin credentials  
 RESULT: Domain Administrator credentials acquired  
 
-SMBExec has the ability to rapidly login to several assets to check for domain or enterprise admins are logged in. So we just keep harvesting and moving onto other machines until we find what we're looking for.  
+SMBExec has the ability to rapidly login to several assets to check for domain/enterprise admins that are logged in. So we just keep harvesting and moving onto other machines until we find what we're looking for.  
 
 ```
 Choice: 7
@@ -147,7 +149,7 @@ The results should look similar to the text below. Keep in mind that you can for
 ```  
 
 ## Prevention  
-Personally, I feel that this attack is due to poor habits, legacy systems, and a dash of laziness. Of course, the following list is not exhaustive and should be researched in greater detail.  
+Personally, I feel that these attacks are due to poor habits, legacy systems, and a dash of laziness. Of course, the following list is not exhaustive and should be researched in greater detail.  
 
 - Disable LLMNR and NBT-NS if at all possible  
 - To mitigate WPAD attack, add an entry for “wpad” in your DNS zone or disable the autodetect  proxy settings  
@@ -158,4 +160,4 @@ Personally, I feel that this attack is due to poor habits, legacy systems, and a
 
 ## Conclusion  
 
-After experimenting and talking with fellow pen testers, the results are quite staggering. Most would conclude that they eventually get domain admin over 80% of the time with this method. Naturally you can combine this with something like Metasploit or your very own tool to either automate, make it quieter, or just plain faster. In many cases, attackers are spraying usernames and passwords/hashes all over the network and seeing what sticks. Primarily you should focus on how loud you can be and what your ultimate goal is, having some familiarity of what is the "norm" at the organization certainly doesn't hurt either.  
+After experimenting and talking with fellow pen testers, the results are quite staggering. Most conclude that they eventually get domain admin over 80% of the time with these methods. Naturally you can combine this with something like Metasploit or your very own tool to either automate, make it quieter, or just plain faster. In many cases, attackers are spraying usernames and passwords/hashes all over the network and seeing what sticks. Primarily you should focus on how loud you can be and what your ultimate goal is; having some familiarity of what's the "norm" at the organization certainly doesn't hurt either.  
