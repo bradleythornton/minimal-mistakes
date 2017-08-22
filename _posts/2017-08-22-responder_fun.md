@@ -41,8 +41,8 @@ While researching some ways in which to obtain Domain Admin within an organizati
 [SMBExec](https://github.com/pentestgeek/smbexec) - which uses WCE  
 
 ## Starting a rogue HTTP & SMB service  
-ACTION: LLMNR & NBT-NS poisoning  
-RESULT: Allows for NETNTLM hashes to be captured  
+*ACTION: LLMNR & NBT-NS poisoning  
+RESULT: Allows for NETNTLM hashes to be captured*  
 
 Here's a simplified sketch of what we want to happen  
 
