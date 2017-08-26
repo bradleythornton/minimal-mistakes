@@ -7,7 +7,7 @@ tags:
   - responder
 ---
 
-While researching some ways in which to obtain Domain Admin within an organization, I started playing around with Responder and figured I would share a quick walkthrough. Some of these methods are a bit dated but after talking with various pen testers and red teamers, they're still applicable even today.  
+While researching some ways in which to obtain Domain Admin within an organization, I started playing around with Responder and figured I would share a quick walkthrough. Some of these methods are a bit dated but after talking with various pen testers and red teamers, they're still **VERY** applicable even today.  
 
 ## Overview  
 
