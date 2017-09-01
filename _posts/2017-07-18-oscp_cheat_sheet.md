@@ -22,7 +22,7 @@ Intense scan
 #### Web  
 `nitko -h <IP>`  
 `dirb http://<IP> /usr/share/wordlists/dirb/<insert related list>`  
-`finmap -u <IP>`  
+`fimap -u <IP>`  
 `./dotdotpwn.pl -m <MODULE> -h <HOST> [OPTIONS]`  
 `wpscan –url http://<IP>/ –enumerate p`  
 [File Include Resource 1](https://evilzone.org/tutorials/remote-file-inclusion%28rfi%29/)  
