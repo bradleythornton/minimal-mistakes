@@ -22,14 +22,14 @@ One of the areas of interest that first led to me to becoming passionate about s
 # Process  
 ***
 
-Option 1 - Memory
+**Option 1 - Memory**  
 - Download Cheat Engine
 - Attach Cheat Engine to process
 - Find memory location
 - Modify memory location value
 
 
-Option 2 - Static Code
+**Option 2 - Static Code**  
 - Obtain SWF file
 - Load SWF file in Decompiler
 - Modify SWF file
