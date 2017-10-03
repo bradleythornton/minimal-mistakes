@@ -7,7 +7,7 @@ tags:
   - flash
 ---
 
-One of the areas of interest that first led to me to becoming passionate about security was the Game Genies and Game Sharks. I thought it was fascinating to find these little nuggets that allowed me to interact with the game in a way that the developers didn’t intend for me to. In some instances, finding the cheat codes or hacks were more interesting than the game itself. So, while I was playing a couple of flash games and came across an article at [Privsec](https://privsec.blog/penetration-testing-flash-apps-aka-how-to-cheat-at-blackjack/). I got the bug again and this post is the outcome of that. Hopefully this intrigues you to test applications that your company uses that may be vulnerable to a client-side attack (with permission of course). My examples below are innocent in nature but there are some very real-world scenarios that aren’t.  
+One of the areas of interest that first led to me to becoming passionate about security was the Game Genies and Game Sharks. I thought it was fascinating to find these little nuggets that allowed me to interact with the game in a way that the developers didn’t intend for me to. In some instances, finding the cheat codes or hacks were more interesting than the game itself. While I was playing a couple of flash games and came across an article at [Privsec](https://privsec.blog/penetration-testing-flash-apps-aka-how-to-cheat-at-blackjack/), I got the bug again and this post is the outcome of that. Hopefully this intrigues you to test applications that your company uses that may be vulnerable to a client-side attack (with permission of course). My examples below are innocent in nature but there are some very real-world scenarios that aren’t.  
 
 > **Disclaimer:** This along with all other information found on my blog is for educational purposes only. Please don’t use this information to earn badges, be placed on leaderboards, cheat for monetary gain, or commit any illegal activities. Not only in most cases is it against terms of use but in some situations, it is blatantly illegal.  
 
@@ -47,7 +47,7 @@ I would be remiss if I didn’t at least mention Cheat Engine in an article abou
 ## Obtain SWF file  
 ***
 
-First, we’ll need to obtain the SWF file for tampering. You can do this in various ways such as navigating directly to the flash game file, pulling it from your browsers cache, or using a web proxy to find its location if you are unable to naturally. In this example, we’ll use Burp as our web proxy to identify the SWF file. Configure your browser to run through Burp, detailed instructions can be found [here](https://support.portswigger.net/customer/portal/articles/1783055-configuring-your-browser-to-work-with-burp). You should clear your browsers cache to ensure that the file will be downloaded. Navigate to the game with interceptor turned on. You’ll likely have to forward several requests due to ads and things of that nature but what you’re ultimately looking for is a GET request for a SWF file. Your request would look something like the below example.   
+First, we’ll need to obtain the SWF file for tampering. You can do this in various ways such as navigating directly to the flash game file, pulling it from your browsers cache, or using a web proxy to find its location if you are unable to naturally. In this example, we’ll use Burp as our web proxy to identify the SWF file. Configure your browser to run through Burp, detailed instructions can be found [here](https://support.portswigger.net/customer/portal/articles/1783055-configuring-your-browser-to-work-with-burp). You should clear your browsers cache to ensure that the file will be downloaded. Navigate to the game with "Intercept" turned on. You’ll likely have to forward several requests due to ads and things of that nature but what you’re ultimately looking for is a GET request for a SWF file. Your request would look something like the below example.   
 
 ![Burp Interception](/assets/images/flashburp1.jpg)  
 
@@ -75,7 +75,7 @@ I typically search through the various parameters and files located within that 
 
 ![Game 1 Example](/assets/images/flashexample1.jpg)  
 
-However, some applications have these variables buried within additional code that doesn’t quite stick out so blatantly (see line 370)  
+However, some applications have these variables buried within additional code that doesn’t quite stick out so obviously (see line 370)  
 
 ![Game 2 Example](/assets/images/flashexample2.jpg)  
 
@@ -109,7 +109,7 @@ In this example, you immediately are presented with your cash
 ## Optional: Replaying within the session  
 ***
 
-If replaying within the session is the ultimately goal (remember, don’t do this to fulfill badges/leaderboard…just don’t be one of “those” people…) then we’ll return to Burp. You’ll need to restart your browser and clear the cache. Be on the lookout for the same request that you used to retrieve the SWF file. Right click in the white space and select “Do intercept” > “Response to this request”  
+If replaying within the session is ultimately the goal (remember, don’t do this to fulfill badges/leaderboard…just don’t be one of “those” people…) then we’ll return to Burp. You’ll need to restart your browser and clear the cache. Be on the lookout for the same request that you used to retrieve the SWF file. Right click in the white space and select “Do intercept” > “Response to this request”  
 
 ![Modify Burp Response](/assets/images/flashresponse1.jpg)  
 
