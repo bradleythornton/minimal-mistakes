@@ -4,11 +4,11 @@ permalink: /walkthroughs/
 title: "Walkthroughs"
 author_profile: false
 ---
-1
+2
 {% include base_path %}
 {% include group-by-array collection=site.posts field="categories" %}
 
-{% for category in group_names %}
+{% for category = "walkthroughs" %}
   {% assign posts = group_items[forloop.index0] %}
   <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
   {% for post in posts %}
