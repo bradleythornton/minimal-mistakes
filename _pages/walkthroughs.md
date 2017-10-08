@@ -6,7 +6,7 @@ author_profile: false
 ---
 
 {% include base_path %}
-{% include group-by-array collection=site.posts field="categories=walkthroughs" %}
+{% include group-by-array collection=site.posts field="categories="walkthroughs"" %}
 
 {% for category in group_names %}
   {% assign posts = group_items[forloop.index0] %}
