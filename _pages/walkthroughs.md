@@ -2,6 +2,8 @@
 layout: archive
 permalink: /walkthroughs/
 title: "Vulnhub Walkthroughs"
+header:
+  overlay_color: "#333"
 author_profile: false
 ---
 
