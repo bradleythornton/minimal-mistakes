@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /walkthroughs/
-title: "Walkthroughs"
+title: "Vulnhub Walkthroughs"
 author_profile: false
 ---
 
