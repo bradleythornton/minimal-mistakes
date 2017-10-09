@@ -1,8 +1,5 @@
 ---
-layout: splash
-classes:
-  - landing
-  - dark-theme
+layout: archive
 permalink: /oscp/
 title: "OSCP"
 author_profile: false
