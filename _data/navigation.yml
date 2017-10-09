@@ -6,10 +6,10 @@ main:
     url: https://bradleythornton.github.io/thor-sec/oscp/
   - title: "Walkthroughs"
     url: https://bradleythornton.github.io/thor-sec/walkthroughs/
+  - title: "Archive"
+    url: https://bradleythornton.github.io/thor-sec/archive/
   - title: "About"
     url: https://bradleythornton.github.io/thor-sec/about/
-  #- title: "Archive"
-  #  url: https://bradleythornton.github.io/thor-sec/archive/
   # - title: "Archive"
   #   url: https://bradleythornton.github.io/thor-sec/year-archive/
   # - title: "Sample Collections"
