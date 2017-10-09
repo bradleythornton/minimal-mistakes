@@ -59,7 +59,8 @@ Go to “Response” > “Headers” tab and will see various strange characters
 
 Or you can simply navigate directly to the swf file (location is highlighted in green) and you can do a “File” > “Save As”  
 
-> Side-Note: If you happen to skip the request and need to come back you can always review previous requests in the HTTP History tab.  
+**Side-Note:** If you happen to skip the request and need to come back you can always review previous requests in the HTTP History tab.
+{: .notice--info}
 
 ## Load SWF file in Decompiler  
 ***
@@ -80,7 +81,8 @@ However, some applications have these variables buried within additional code th
 
 ![Game 2 Example](/assets/images/flashexample2.jpg)  
 
-> Side-note: If you start the game off with a certain amount of cash then you can search for that value as well. If you can’t locate the variable that you are looking for then you could attempt at altering other variables that will have a similar effect, such as reducing the cost of everything to free or magnifying loot drops for additional resources.  
+**Side-note:** If you start the game off with a certain amount of cash then you can search for that value as well. If you can’t locate the variable that you are looking for then you could attempt at altering other variables that will have a similar effect, such as reducing the cost of everything to free or magnifying loot drops for additional resources.
+{: .notice--info}
 
 ## Modify SWF file  
 ***
@@ -105,7 +107,8 @@ In this example, you immediately are presented with your cash
   
 ![Results 2](/assets/images/flashresults2.jpg)  
 
-> Side-Note: If you experience errors then you may have a number that’s too large and should reduce it to fit within the constraints of the application, or remove them completely if you are able to do so.  
+**Side-Note:** If you experience errors then you may have a number that’s too large and should reduce it to fit within the constraints of the application, or remove them completely if you are able to do so.
+{: .notice--info}
 
 ## Optional: Replaying within the session  
 ***
