@@ -1,8 +1,7 @@
 ---
 layout: archive
 permalink: /test/
-title: "test"
-author_profile: true
+title: "Walkthroughs"
 ---
 
 {% capture written_year %}'None'{% endcapture %}
