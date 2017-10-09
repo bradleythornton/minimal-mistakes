@@ -1,5 +1,6 @@
 ---
-layout: compress
+layout: archive
+classes: dark-theme
 permalink: /oscp/
 title: "OSCP"
 author_profile: false
