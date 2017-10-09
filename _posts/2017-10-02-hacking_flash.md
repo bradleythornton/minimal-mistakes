@@ -9,7 +9,7 @@ tags:
 
 One of the areas of interest that first led to me to becoming passionate about security was the Game Genies and Game Sharks. I thought it was fascinating to find these little nuggets that allowed me to interact with the game in a way that the developers didn’t intend for me to. In some instances, finding the cheat codes or hacks were more interesting than the game itself. While I was playing a couple of flash games and came across an article at [Privsec](https://privsec.blog/penetration-testing-flash-apps-aka-how-to-cheat-at-blackjack/), I got the bug again and this post is the outcome of that. Hopefully this intrigues you to test applications that your company uses that may be vulnerable to a client-side attack (with permission of course). My examples below are innocent in nature but there are some very real-world scenarios that aren’t.  
 
-> **Disclaimer:** This along with all other information found on my blog is for educational purposes only. Please don’t use this information to earn badges, be placed on leaderboards, cheat for monetary gain, or commit any illegal activities. Not only in most cases is it against terms of use but in some situations, it is blatantly illegal.
+**Disclaimer:** This along with all other information found on my blog is for educational purposes only. Please don’t use this information to earn badges, be placed on leaderboards, cheat for monetary gain, or commit any illegal activities. Not only in most cases is it against terms of use but in some situations, it is blatantly illegal.
 {: .notice--danger}
 
 # Tools  
