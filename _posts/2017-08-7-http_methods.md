@@ -3,6 +3,7 @@ title:  "Obtaining HTTP Request Method’s"
 header: "Obtaining HTTP Request Method’s"
 categories: 
   - tutorial
+  - OSCP
 tags:
   - scanning
 ---
