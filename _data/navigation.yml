@@ -2,10 +2,10 @@
 main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Walkthroughs"
-    url: https://bradleythornton.github.io/thor-sec/walkthroughs/
   - title: "OSCP"
     url: https://bradleythornton.github.io/thor-sec/oscp/
+  - title: "Walkthroughs"
+    url: https://bradleythornton.github.io/thor-sec/walkthroughs/
   - title: "About"
     url: https://bradleythornton.github.io/thor-sec/about/
   #- title: "Archive"
