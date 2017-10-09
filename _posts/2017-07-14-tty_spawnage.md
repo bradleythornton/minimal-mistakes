@@ -2,7 +2,8 @@
 title:  "TTY Spawning Cheat Sheet"
 header: "TTY Spawning Cheat Sheet"
 categories: 
-  - cheatsheet, OSCP
+  - cheatsheet
+  - OSCP
 tags:
   - tty
 ---

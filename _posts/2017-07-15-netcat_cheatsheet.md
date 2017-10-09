@@ -2,7 +2,8 @@
 title:  "Netcat Cheat Sheet"
 header: "Netcat Cheat Sheet"
 categories: 
-  - Cheatsheet, OSCP
+  - Cheatsheet
+  - OSCP
 tags:
   - Netcat
 ---

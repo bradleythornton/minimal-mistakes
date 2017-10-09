@@ -2,7 +2,8 @@
 title:  "Basic Buffer Overflows"
 header: "Basic Buffer Overflows"
 categories: 
-  - Tutorial,OSCP
+  - Tutorial
+  - OSCP
 tags:
   - Hacking
 ---

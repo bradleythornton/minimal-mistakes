@@ -2,7 +2,8 @@
 title:  "Msfvenom Cheat Sheet"
 header: "Msfvenom Cheat Sheet"
 categories: 
-  - Cheatsheet, OSCP
+  - Cheatsheet
+  - OSCP
 tags:
   - Msfvenom
 ---

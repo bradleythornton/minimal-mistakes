@@ -3,6 +3,7 @@ title:  "OSCP Review"
 header: "OSCP Review"
 categories: 
   - review
+  - OSCP
 tags:
   - OSCP
 ---
