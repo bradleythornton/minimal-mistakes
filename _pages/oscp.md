@@ -2,6 +2,8 @@
 layout: archive
 permalink: /oscp/
 title: "OSCP"
+header:
+  overlay_color: "#333"
 author_profile: false
 ---
 
