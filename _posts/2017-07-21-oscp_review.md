@@ -89,6 +89,7 @@ The exam is a 24 hour practical exam followed by 24 hours to submit the report. 
  - Start off with light port scans and work your way to more advanced ones
  - I had better luck with the higher point machines so I always started with those
  - Take a break of it all for a day or two before your exam
+
 <a name="resource"></a>
 ## Resources
 
