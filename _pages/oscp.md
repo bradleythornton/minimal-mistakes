@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /oscp/
-title: "OSCP"
+title: "Offensive Security Certified Professional Articles"
 header:
   overlay_color: "#333"
 author_profile: false
