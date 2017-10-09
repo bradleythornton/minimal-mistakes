@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: default
 permalink: /oscp/
 title: "OSCP"
 author_profile: false
