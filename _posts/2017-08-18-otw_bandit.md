@@ -7,6 +7,8 @@ tags:
   - overthewire
 ---
 
+If you’re looking to hone some of your shell skills then the [OverTheWire: Bandit](http://overthewire.org/wargames/bandit/) series is certainly a step in the right direction. By the time you finish, you should be comfortable SSH’ing into machines, navigating the file system, and even a little bit of bash scripting. I thought it was a lot of fun and look forward to completing their other challenges.  
+
 ## Level 0:
 
 The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1.  
