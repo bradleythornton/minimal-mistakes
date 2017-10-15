@@ -110,7 +110,7 @@ koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 
 ## Level 5 -> 6:
 
-The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:  
 human-readable  
 1033 bytes in size  
 not executable  
@@ -130,11 +130,11 @@ DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
 ## Level 6 -> 7:
 
-The password for the next level is stored somewhere on the server and has all of the following properties:
+The password for the next level is stored somewhere on the server and has all of the following properties:  
 
-owned by user bandit7
-owned by group bandit6
-33 bytes in size
+owned by user bandit7  
+owned by group bandit6  
+33 bytes in size  
 
 ```console
 bandit6@bandit:~$ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null                  
