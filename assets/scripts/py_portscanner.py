@@ -2,7 +2,7 @@
 import socket, sys
 from threading import Thread
 
-# Easily changable variables (you can extend the timeout length if necessary)
+# Easily changeable variables (you can extend the timeout length if necessary)
 threads = []
 timeout = 0.5
 
