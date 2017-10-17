@@ -10,8 +10,8 @@ timeout = 0.5
 try:
    host = raw_input("Enter Target Host Address: ")
    hostIP = socket.gethostbyname(host)
-   startPort = int(raw_input("Enter Starting Port to Scan:"))
-   endPort = int(raw_input("Enter Ending Port to Scan:"))
+   startPort = int(raw_input("Enter Starting Port to Scan: "))
+   endPort = int(raw_input("Enter Ending Port to Scan: "))
 
 except KeyboardInterrupt:
     print "\n\n[*]User Requested an Interrupt[*]"
