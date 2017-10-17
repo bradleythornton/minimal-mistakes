@@ -14,7 +14,7 @@ I'm not a programmer by trade and only have limited experience by just hacking a
 
 ## Python Code  
 
-This has only been tested on the Kali OS distro.  
+This has only been tested on the [Kali](https://www.kali.org/).  
 
 ```python
 #!/usr/bin/env python
