@@ -13,7 +13,6 @@ tags:
 I'm not a programmer by trade and only have limited experience by just hacking and slashing existing code to accommodate my needs for work/pen testing. In an attempt at increasing my knowledge in the area, I created a quick and simple port scanner. It’s by no means anywhere close to the functionality of nmap but it was a lot of fun making and I learned a lot. I encourage you to create some scripts for anything you plan on doing more than once just for the sheer experience of it.  
 
 ## Python Code  
-***
 ```python
 #!/usr/bin/env python
 import socket, sys
