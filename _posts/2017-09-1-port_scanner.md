@@ -6,7 +6,9 @@ categories:
 tags:
   - programming
   - scanner
-  
+---
+
+
 I'm not a programmer by trade and only have limited experience by just hacking and slashing existing code to accommodate my needs for work/pen testing. In an attempt at increasing my knowledge in the area, I created a quick and simple port scanner. It’s by no means anywhere close to the functionality of nmap but it was a lot of fun making and I learned a lot. I encourage you to create some scripts for anything you plan on doing more than once just for the sheer experience of it.  
 
 # Python Code  
@@ -74,10 +76,10 @@ Internal Scan
 External Scan  
 ![External Scan](/assets/images/portscannerex1.jpg)  
 
-Ctrl + C Handling
+Ctrl + C Handling  
 ![CTRLC Handling](/assets/images/portscannerex3.jpg)  
 
-Host Unreachable Handling
+Host Unreachable Handling  
 ![Host Unreachable](/assets/images/portscannerex4.jpg)  
 
 # References
