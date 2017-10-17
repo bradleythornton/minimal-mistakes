@@ -6,12 +6,13 @@ categories:
 tags:
   - programming
   - scanner
+  - python
 ---
 
 
 I'm not a programmer by trade and only have limited experience by just hacking and slashing existing code to accommodate my needs for work/pen testing. In an attempt at increasing my knowledge in the area, I created a quick and simple port scanner. It’s by no means anywhere close to the functionality of nmap but it was a lot of fun making and I learned a lot. I encourage you to create some scripts for anything you plan on doing more than once just for the sheer experience of it.  
 
-# Python Code  
+## Python Code  
 ***
 ```python
 #!/usr/bin/env python
@@ -68,7 +69,7 @@ print "-" * 50
 print "Scanning completed!"
 print "-" * 50
 ```
-# Output/Example  
+## Output/Example  
 ***
 Internal Scan  
 ![Interal Scan](/assets/images/portscannerex2.jpg)  
@@ -82,7 +83,7 @@ Ctrl + C Handling
 Host Unreachable Handling  
 ![Host Unreachable](/assets/images/portscannerex4.jpg)  
 
-# References
+## References
 [Python Socket Programming](https://docs.python.org/2/howto/sockets.html)  
 [Sploit: How to Make a Python Port Scanner](https://null-byte.wonderhowto.com/how-to/sploit-make-python-port-scanner-0161074/)  
 [Python For Beginners](http://www.pythonforbeginners.com/code-snippets-source-code/port-scanner-in-python)  
