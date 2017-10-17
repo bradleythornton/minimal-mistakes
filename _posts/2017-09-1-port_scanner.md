@@ -33,7 +33,7 @@ try:
    endPort = int(raw_input("Enter Ending Port to Scan: "))
 
 except KeyboardInterrupt:
-    print "\n\n[*]User Requested an Interrupt[*]"
+    print "\n\n[*]User requested an interrupt[*]"
     sys.exit()
 
 except socket.gaierror:
