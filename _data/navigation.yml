@@ -4,8 +4,8 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "OSCP"
     url: https://bradleythornton.github.io/thor-sec/oscp/
-  - title: "Cheat Sheets"
-    url: https://bradleythornton.github.io/thor-sec/cheatsheets/
+  #- title: "Cheat Sheets"
+  #  url: https://bradleythornton.github.io/thor-sec/cheatsheets/
   - title: "Walkthroughs"
     url: https://bradleythornton.github.io/thor-sec/walkthroughs/
   - title: "Archive"
