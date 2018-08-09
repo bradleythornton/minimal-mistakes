@@ -13,7 +13,7 @@ Shodan's a search engine which helps find systems on the internet. It's a great 
 # Basic Search Filters  
 ***
 <strong>port:</strong> `Search by specific port`  
-<strong>net:</strong> `Search based on an IP/CIDR`
+<strong>net:</strong> `Search based on an IP/CIDR`  
 <strong>hostname:</strong> `Locate devices by hostname`  
 <strong>os:</strong> `Search by Operating System`  
 <strong>city:</strong> `Locate devices by city`  
@@ -39,4 +39,4 @@ Unsecured Linksys Webcams with screenshots in the search query
 
 # Additional filters through REST and Streaming API
 ***
-https://developer.shodan.io/api/banner-specification
+[Shodan Developer - Banner Specification](https://developer.shodan.io/api/banner-specification)  
