@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /cheat_sheets/
+permalink: /cheatsheets/
 title: "Cheat Sheet Articles"
 header:
   overlay_color: "#333"
