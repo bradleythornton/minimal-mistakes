@@ -8,6 +8,8 @@ tags:
   - Shodan
 ---
 
+![Shodan Banner](/assets/images/shodan_banner.jpg)  
+
 Shodan's a search engine which helps find systems on the internet. It's a great resource to provide passive reconnaissance on a target or as a measuring tool for how widespread a configuration or device is.
 
 # Basic Search Filters  
