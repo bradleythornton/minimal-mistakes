@@ -8,7 +8,7 @@ author_profile: false
 ---
 
 {% capture written_year %}'None'{% endcapture %}
-{% for post in site.categories.cheat_sheet %}
+{% for post in site.categories.cheatsheet %}
 {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 {% if year != written_year %}
 <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
