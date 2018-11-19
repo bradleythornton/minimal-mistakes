@@ -86,10 +86,6 @@ There’s already a great writeup on how to do this at the link but I thought th
 [AutoSploit](https://github.com/NullArray/AutoSploit)  
 I was reluctant to provide a link to this tool as I have mixed feelings about it’s existence and don’t want to spread it around anymore than it already has been. However, it grabs hosts from Shodan and runs Metasploit modules against them. It essentially takes all the fun out of hacking and is a “click, click, bacon” type of tool. There are certainly opportunities where this can be helpful to an organization, but in reality, it isn’t primarily used that way. It’s an interesting idea and neat to play around with, just don’t be one of “those people” if you can help it.  
 
-# Legal issues  
-***
-I would be remiss if I at least didn’t mention that many countries have different laws on what constitutes hacking or misuse of a computer system. In some countries merely attempting default credentials on a device you don’t own is considered “hacking” and punishable by law. Act responsibly…or whatever phrase helps deter you from going over to the dark side.  
-
 # Shodan API  
 ***
 There’s some great documentation on how to use the Shodan API and I plan to create a blog post solely focusing on it. In the meantime, check out the [official documentation](https://developer.shodan.io/api/clients) to get started.  
@@ -102,6 +98,10 @@ auxiliary/gather/shodan_search – This module uses the Shodan API to search Sho
 
 auxiliary/gather/shodan_honeyscore – This module uses the Shodan API to check if a server is a honeypot or not. It’ll return a score from 0.0 to 1.0, the larger the number the more likely it is a honeypot. Same rules apply as the previous module in that you need to utilize a Shodan API Key. Alternatively, you can do this from the web interface by going to https://honeyscore.shodan.io/.   
 ![Metasploit Shodan Honeypot Search Module](/assets/images/shodan_honeypot.jpg)  
+
+# Legal issues  
+***
+I would be remiss if I at least didn’t mention that many countries have different laws on what constitutes hacking or misuse of a computer system. In some countries merely attempting default credentials on a device you don’t own is considered “hacking” and punishable by law. Act responsibly…or whatever phrase helps deter you from going over to the dark side.  
 
 # Additional References  
 ***
