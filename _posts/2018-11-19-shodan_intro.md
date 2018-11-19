@@ -21,6 +21,7 @@ You have a few different options to interact with Shodan from the web interface,
 
 # Create an account  
 ***
+
 I’m going to assume you know how to create an account on a website and not waste your time. I do recommend the paid subscription as there are many benefits. One reason for the timing of this post was so that you can take advantage of their usual Black Friday deal which drastically reduces the cost of a lifetime membership from $50 to only $5. We can all agree that we have spent a lot more and received a lot less, so give it a shot.
 
 # How to search  
@@ -46,7 +47,7 @@ Towards the top of the page, there’s a “View Raw Data” link that will prov
  
 ![Raw Data Shodan Result](/assets/images/shodan_raw_data.jpg)  
 
-# Examples   - I'll add some additional examples shortly
+# Examples  
 ***
 - Traffic lights
 - Routers
