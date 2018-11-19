@@ -53,37 +53,37 @@ Towards the top of the page, there’s a “View Raw Data” link that will prov
 
 [Shodan Explore](https://www.shodan.io/explore) is a great starting point to demonstrate some of the juicy things that you can find on Shodan. This page allows you view search queries that other users have shared. I recommend making it one of your first stops, so you can get a feel for what data exists and how others have formed their search queries.
 
-[Shodan Exposure - Internet Exposure Observatory](https://exposure.shodan.io/#/)
+[Shodan Exposure - Internet Exposure Observatory](https://exposure.shodan.io/#/)  
 Yet another Shodan feature that many may not be aware of. This is a great tool to check country exposures and very interesting stats.  
 
 ![Shodan Exposure - US](/assets/images/shodan_exposure.jpg)  
  
-[Shodan Images](https://images.shodan.io/)
+[Shodan Images](https://images.shodan.io/)  
 And yet another Shodan feature that many may not be aware of, Shodan Images. This one is self-explanatory but extremely interesting. It grabs screenshots of various devices such as desktops and webcams.  
 
-[Retro Shodan](https://2000.shodan.io/#/)
+[Retro Shodan](https://2000.shodan.io/#/)  
 This is more for fun than anything else, but a new theme was released as an 80’s retro version of Shodan. By the way, it comes with music so enable it at the top!
 
 ![Shodan 2000](/assets/images/shodan_2000.jpg)  
 
-[Ship Tracker](https://shiptracker.shodan.io/)
+[Ship Tracker](https://shiptracker.shodan.io/)  
 Well known Ship Tracker that was discussed at Defcon one year by Jeff Merrick. Not sure if it’s still used/updated but it tracks ships by correlating AIS GPS coordinates and satcom box profiles on Shodan.  
 
-[Shodan Exploits](https://exploits.shodan.io)
+[Shodan Exploits](https://exploits.shodan.io)  
 Another Shodan feature that many may not be aware of, Shodan Exploits. It works similar to the rest of the tool suite but it’s a great way to search for exploits across a multitude of resources. See example below of a CISCO ASA 8 search. [Here’s](https://thor-sec.com/cheatsheet/shodan/shodan_cheat_sheet/) a quick rundown of Shodan Exploit search filters.  
 
 ![Shodan Exploit Result](/assets/images/shodan_exploit.jpg)  
  
-[Interactive Camera Map](https://github.com/woj-ciech/kamerka)
+[Interactive Camera Map](https://github.com/woj-ciech/kamerka)  
 Tool to help with creating maps with cameras based on geolocation and Shodan. This is a great OSINT tool, particularly in relation to physical assessments.  
 
-[SearchDiggity](https://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/)
+[SearchDiggity](https://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/)  
 This tool didn’t really fit anywhere else, but it definitely warrants mention. Bishop Fox added an additional tool “SHODAN Diggity” which makes for an easy interface to Shodan and a great way to look at a particular targets Internet footprint.  
 
-[Real-Time Network Monitoring](https://help.shodan.io/guides/how-to-monitor-network)
+[Real-Time Network Monitoring](https://help.shodan.io/guides/how-to-monitor-network)  
 There’s already a great writeup on how to do this at the link but I thought this was an interesting way to set up network alerts by using Shodan.  
 
-[AutoSploit](https://github.com/NullArray/AutoSploit)
+[AutoSploit](https://github.com/NullArray/AutoSploit)  
 I was reluctant to provide a link to this tool as I have mixed feelings about it’s existence and don’t want to spread it around anymore than it already has been. However, it grabs hosts from Shodan and runs Metasploit modules against them. It essentially takes all the fun out of hacking and is a “click, click, bacon” type of tool. There are certainly opportunities where this can be helpful to an organization, but in reality, it isn’t primarily used that way. It’s an interesting idea and neat to play around with, just don’t be one of “those people” if you can help it.  
 
 # Legal issues  
