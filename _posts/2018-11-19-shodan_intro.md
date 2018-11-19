@@ -40,8 +40,6 @@ As with most websites, you search in the white search bar at the top (depicted a
 - Country
 - Banner cataloged
 
-![Brief Shodan Result](/assets/images/shodan_entry.jpg)  
- 
 A section that many fail to notice is the small “Details” link which really helps to profile a device. The details page lists out basic information, GPS map, ports, services, and even vulnerabilities. If you’re on an engagement, you’re already one step ahead and you haven’t even touched their network yet.  
 
 ![Detailed Shodan Result](/assets/images/shodan_detailed.jpg)  
