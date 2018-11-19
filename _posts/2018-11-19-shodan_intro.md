@@ -1,6 +1,6 @@
 ---
-title:  "Intro to Shodan"
-header: "Intro to Shodan"
+title:  "Introduction to Shodan"
+header: "Introduction to Shodan"
 categories: 
   - shodan
 tags:
@@ -52,7 +52,6 @@ Towards the top of the page, there’s a “View Raw Data” link that will prov
 ***
 
 [Shodan Explore](https://www.shodan.io/explore) is a great starting point to demonstrate some of the juicy things that you can find on Shodan. This page allows you view search queries that other users have shared. I recommend making it one of your first stops, so you can get a feel for what data exists and how others have formed their search queries.
-Combining data for fun and profit.  
 
 [Shodan Exposure - Internet Exposure Observatory](https://exposure.shodan.io/#/)
 Yet another Shodan feature that many may not be aware of, Shodan Exposure (Internet Exposure Observatory). This is a great tool to check country exposures and very interesting stats.  
