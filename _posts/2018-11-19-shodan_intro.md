@@ -48,13 +48,6 @@ Towards the top of the page, there’s a “View Raw Data” link that will prov
  
 ![Raw Data Shodan Result](/assets/images/shodan_raw_data.jpg)  
 
-# Examples  
-***
-- Traffic lights
-- Routers
-- Webcams
-- SCADA System
-
 # Points of interest  
 ***
 
