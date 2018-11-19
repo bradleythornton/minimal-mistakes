@@ -17,7 +17,7 @@ You can take a look at what the Shodan Help Center has to say about it [here](ht
 # Interaction options  
 ***
 
-You have a few different options to interact with Shodan from the web interface, API through command line tools, and there is even some Metasploit modules.  
+You have a few different options to interact with Shodan from the web interface, API through command line tools, and there are even some Metasploit modules.  
 
 # Create an account  
 ***
@@ -28,7 +28,7 @@ I’m going to assume you know how to create an account on a website and not was
 
 ![How to Shodan Search](/assets/images/shodan_search.jpg)  
 
-As with most websites, you search in the white search bar at the top (depicted above is a search of IIS). You can find a quick cheat sheet for basic search filters as well as some examples here (https://thor-sec.com/cheatsheet/shodan/shodan_cheat_sheet/). Once you’ve made a search you’ll receive the output. On the left are quick filters you can apply which will perform a new search with a stricter criteria and on the right you’ll get the result details in the format below:  
+As with most websites, you search in the white search bar at the top (depicted above is a search of IIS). You can find a quick cheat sheet for basic search filters as well as some examples [here](https://thor-sec.com/cheatsheet/shodan/shodan_cheat_sheet/). Once you’ve made a search you’ll receive the output. On the left are quick filters you can apply which will perform a new search with a stricter criteria and on the right you’ll get the result details in the format below:  
 - IP address
 - Host name
 - ISP
