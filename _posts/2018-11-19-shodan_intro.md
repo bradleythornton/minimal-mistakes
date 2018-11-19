@@ -78,12 +78,10 @@ This is more for fun than anything else, but a new theme was released as an 80�
 Well known Ship Tracker that was discussed at Defcon one year by Jeff Merrick. Not sure if it’s still used/updated but it tracks ships by correlating AIS GPS coordinates and satcom box profiles on Shodan.  
 
 [Shodan Exploits](https://exploits.shodan.io)
-Another Shodan feature that many may not be aware of, Shodan Exploits. It works similar to the rest of the tool suite but it’s a great way to search for exploits across a multitude of resources. See example below of a CISCO ASA 8 search.  
+Another Shodan feature that many may not be aware of, Shodan Exploits. It works similar to the rest of the tool suite but it’s a great way to search for exploits across a multitude of resources. See example below of a CISCO ASA 8 search. [Here’s](https://thor-sec.com/cheatsheet/shodan/shodan_cheat_sheet/) a quick rundown of Shodan Exploit search filters.  
 
 ![Shodan Exploit Result](/assets/images/shodan_exploit.jpg)  
  
-[Here’s](https://thor-sec.com/cheatsheet/shodan/shodan_cheat_sheet/) a quick rundown of Shodan Exploit search filters.  
-
 [Interactive Camera Map](https://github.com/woj-ciech/kamerka)
 Tool to help with creating maps with cameras based on geolocation and Shodan. This is a great OSINT tool, particularly in relation to physical assessments.  
 
