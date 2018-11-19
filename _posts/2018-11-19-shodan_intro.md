@@ -113,6 +113,6 @@ auxiliary/gather/shodan_honeyscore – This module uses the Shodan API to check 
 
 # Additional References  
 ***
-- Complete guide to shodan - https://leanpub.com/shodan
+- Complete guide to shodan - (https://leanpub.com/shodan)
 - Follow them on twitter for updates, new features, and tool references https://twitter.com/shodanhq?lang=en
 - Check out some of the other tools that are offered through Shodan https://www.shodan.io/about/products
