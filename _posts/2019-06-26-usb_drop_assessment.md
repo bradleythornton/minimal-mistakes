@@ -151,7 +151,7 @@ Now we need to choose the file types and payloads that we’ll use.
 
 **Pre-made Payloads**  
 
-The sky is the limit on options here. I’ve provided a few pre-made options for your convivence below. Additional descriptions can be found further in this guide.  
+The sky is the limit on options in this section. I’ve provided a few pre-made options for your convivence [here](https://github.com/bradleythornton/usb_drop_templates). Additional descriptions can be found further in this guide.  
 
 - Malicious USB
   - Microsoft Office Macro’s
