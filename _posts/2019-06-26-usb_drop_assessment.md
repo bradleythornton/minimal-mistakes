@@ -274,13 +274,6 @@ Preparing Web Server
 
 - Save the following code within the HTML file (change URL's to where you want to redirect to)
 
-```<html><head><meta charset="UTF-8" />
-<meta http-equiv="refresh" content="1;url=https://www.us-cert.gov/ncas/tips/ST08-001" />
-<script type="text/javascript">window.location.href = "https://www.us-cert.gov/ncas/tips/ST08-001"</script>
-<title>Page Redirection</title></head>
-<body>If you are not redirected automatically, follow the <a href="https://www.us-cert.gov/ncas/tips/ST08-001">link</a>.</body></html>
-```  
-
 Preparing the payload  
 
 - [Download the encoder](https://github.com/hak5darren/USB-Rubber-Ducky/blob/master/duckencoder.jar)  
