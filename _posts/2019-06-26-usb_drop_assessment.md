@@ -189,7 +189,7 @@ File preparation
 
 - Create an excel file and name it something appropriate
   - Example: Q3_Budget.xls
-- On the “Developer” tab, select “Visual Basic”
+- On the “Developer” tab, select “Visual Basic”  
 ![Excel Developer Button](/assets/images/excel_developer_vb.jpg)  
 
 **Side-Note:** If you don't have the developer button you'll have to add it by right-clicking the menu bar and checking the checkbox beside "Developer" on the right-hand window pane.
@@ -219,7 +219,7 @@ Sub Workbook_Open()
 Password enbable VBA projects  
 
 It's good to password protect VBA projects to prevent a user from viewing the macro before it's executed. While password protection on Microsoft Office programs are trivial, it should stop the casual user.  
-- In the menu bar select Tools > VBAProject Properties
+- In the menu bar select Tools > VBAProject Properties  
 ![Excel VBA Properties](/assets/images/vbproject_props.jpg)  
 - Select the “Protection” tab
   - Check "Lock project for viewing" and place a password of your choice (be sure to document it for your peers)
@@ -234,7 +234,7 @@ Recieve Callbacks
 - Start a web service on Kali
 `service apache2 start`  
 - If you pointed your payload to a web address, then you can review your apache logs at /var/log/apache2/access.log
-  - Example:
+  - Example:  
 ![USB Drop Callback](/assets/images/usb_drop_callback.jpg)  
 - If you pointed your payload to a specific port, you can listen to it with netcat
 `nc -nvlp <PORT>`  
@@ -309,7 +309,7 @@ ENTER
 Recieve Callbacks
 
 - Review your apache logs at /var/log/apache2/access.log
-  - Example
+  - Example  
 ![USB Drop Callback - Rubberducky](/assets/images/usb_drop_callback_rubberducky.jpg)  
 
 Files
@@ -410,7 +410,7 @@ HTML file creation
 Recieve Callbacks
 - Start web server on Kali
 `service apache2 start`  
-- You can review your apache logs at /var/log/apache2/access.log
+- You can review your apache logs at /var/log/apache2/access.log  
 ![USB Drop Callback HTML](/assets/images/usb_drop_callback_html.jpg)  
 
 Files  
@@ -447,7 +447,7 @@ echo “hello” > example.html
 **Optional:** You can use the “ls” command to view the files to ensure it was created.
 {: .notice--info}  
 
-Navigate to localhost/example.html in the browser
+Navigate to localhost/example.html in the browser  
 ![Terminal for servering webpage](/assets/images/kali_1.jpg)  
 
 **NOTE:** Keep in mind that you can access this from another computer by placing the IP address of the attacking machine and appending “/example.html” to it.
@@ -463,6 +463,7 @@ In your terminal type the following
 
 **Attacker Serves Content**  
 Once you have the web server stood up and functioning, it’s now merely a matter of creating files from whichever payload that you choose. I recommend naming your payloads with descriptive names. Once an access call comes from it (even if the file doesn’t exist) it will give you enough information to determine where it came from. For example, you could use “green_resume”. What this would tell you is that the green USB (that I know I dropped in the lobby) was plugged into a machine and they executed the Word document “Resume”. In the log, it would show the IP address, time, browser information, and resource requested.  
+
 ![USB Drop Callback](/assets/images/usb_drop_callback.jpg)  
 
 ## Additional Resources  
