@@ -187,7 +187,7 @@ How to do it (Excel Example)
 
 File preparation
 
-- Create excel file and name it something appropriate
+- Create an excel file and name it something appropriate
   - Example: Q3_Budget.xls
 - On the “Developer” tab, select “Visual Basic”
 ![Excel Developer Button](/assets/images/excel_developer_vb.jpg)  
