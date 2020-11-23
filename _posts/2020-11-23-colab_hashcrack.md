@@ -17,7 +17,7 @@ What’s most interesting about this resource is that it allows GPU access and n
 ## Process  
 ***
 
-First, head over to [Colabcat] (https://github.com/someshkar/colabcat). In the tools bar at the top, click Runtime > Change runtime type > GPU and click save.  
+First, head over to [Colabcat](https://github.com/someshkar/colabcat). In the tools bar at the top, click Runtime > Change runtime type > GPU and click save.  
 
 ![Colab Runtime GPU setting](/assets/images/colab_runtime_gpu.JPG)  
 ![Colab Runtime GPU save](/assets/images/colab_runtime_gpu_save.JPG)  
