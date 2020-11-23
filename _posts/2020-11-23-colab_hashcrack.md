@@ -10,12 +10,12 @@ tags:
   - colab
 ---
 
-##Process  
+I recently found myself on an engagement without a viable cracking rig. While searching for alternative ways, I came across some methods utilizing Google’s [Colab](https://colab.research.google.com/).  According to Google, Colaboratory or “Colab” for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser, and is especially well suited to machine learning, data analysis and education.  
+
+What’s most interesting about this resource is that it allows GPU access and not just any GPU but we’re talking about Nvidia Tesla P100, P4, T4, and K80. The only drawback is that without the Pro version of Colab, everything gets wiped in 12 hours. Even with a time-limit this still worked out great for me. I began my journey by reading up on a few of the basics and quickly installed hashcat and began cracking hashes. I was surprised by the speed at which it was cracking passwords and will include some benchmarks below. However, I knew there had to be a better way to keep sessions, transfer files, and automate this which led me to “colabcat”. [Colabcat](https://github.com/someshkar/colabcat) is a GitHub repository that shares a ipynb file that’s already filled out and ready for cracking. By adding your Google Drive, you get easy file transfers, session restore capabilities, and lose the headache of having to write it all down yourself. For those that are new to Google Colab, read on and we’ll take this step by step to get you cracking in Google’s Colab.  
+
+## Process  
 ***
-
-I recently found myself on an engagement without a viable cracking rig. While searching for alternative ways, I came across some methods utilizing Google’s [Colab] (https://colab.research.google.com/).  According to Google, Colaboratory or “Colab” for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser, and is especially well suited to machine learning, data analysis and education.  
-
-What’s most interesting about this resource is that it allows GPU access and not just any GPU but we’re talking about Nvidia Tesla P100, P4, T4, and K80. The only drawback is that without the Pro version of Colab, everything gets wiped in 12 hours. Even with a time-limit this still worked out great for me. I began my journey by reading up on a few of the basics and quickly installed hashcat and began cracking hashes. I was surprised by the speed at which it was cracking passwords and will include some benchmarks below. However, I knew there had to be a better way to keep sessions, transfer files, and automate this which led me to “colabcat”. [Colabcat] (https://github.com/someshkar/colabcat) is a GitHub repository that shares a ipynb file that’s already filled out and ready for cracking. By adding your Google Drive, you get easy file transfers, session restore capabilities, and lose the headache of having to write it all down yourself. For those that are new to Google Colab, read on and we’ll take this step by step to get you cracking in Google’s Colab.  
 
 First, head over to [Colabcat] (https://github.com/someshkar/colabcat). In the tools bar at the top, click Runtime > Change runtime type > GPU and click save.  
 
