@@ -19,18 +19,18 @@ What’s most interesting about this resource is that it allows GPU access and n
 
 First, head over to [Colabcat] (https://github.com/someshkar/colabcat). In the tools bar at the top, click Runtime > Change runtime type > GPU and click save.  
 
-![Colab Runtime GPU setting](/assets/images/colab_runtime_gpu.jpg)  
-![Colab Runtime GPU save](/assets/images/colab_runtime_gpu_save.jpg)  
+![Colab Runtime GPU setting](/assets/images/colab_runtime_gpu.JPG)  
+![Colab Runtime GPU save](/assets/images/colab_runtime_gpu_save.JPG)  
 
 If you want to use the code as-is, you’ll need to set up your Google Drive. I recommend setting up a Google account that is not used for any other purpose as you will need to give Google Drive File Stream access to parts of the account. To do this, create a directory called “dothashcat” and then create a sub-directory named “hashes”. This would also be a good time to place the hashes you want to crack in this folder.  
 
 Now we’re going to edit some of the code to tailor it to our purposes. In the last box that includes the hashcat commands to run, you’ll want to either write your own hashcat command or uncomment one that is provided. Be sure to edit the hash name from “test.hccapx” to whatever you named the file containing your hashes.  
 
-![Hashcat commands](/assets/images/colab_hashcat_commands.jpg)  
+![Hashcat commands](/assets/images/colab_hashcat_commands.JPG)  
 
 When you are ready to run, click Runtime > Run All. You could also use CTRL+F9. If you chose to utilize Google Drive, then you’ll need to enter in an authorization code. To do this you need to go to the URL that is listed on the page which will take you to the access request page from Google and you would select “Allow”. The next page will give you code to copy and past into the application. You enter it in the box below where you got the URL and press enter.  
 
-![Google Drive Colab Link](/assets/images/colab_link.jpg)  
+![Google Drive Colab Link](/assets/images/colab_link.JPG)  
 
 **Side-Note:** You need to prepend an ! to any commands that you want to run on the host itself; ex. “!whoami”.
 {: .notice--info}
@@ -42,14 +42,14 @@ At least with the free version there’s no way to select a specific GPU and bet
 
 Here is the K80 doing in a brute force attack against a list of 606 NTLM hashes.  
 
-![K80 Benchmark](/assets/images/k80_benchmark.jpg)  
+![K80 Benchmark](/assets/images/k80_benchmark.JPG)  
 
 Here is the benchmark test for the K80 (using this command “!hashcat -w 4 -m 1000 –benchmark”).  
 
-![K80 Benchmark Test](/assets/images/k80_benchmark_test.jpg)  
+![K80 Benchmark Test](/assets/images/k80_benchmark_test.JPG)  
 
 Here is the benchmark for the Tesla P100 (using this command “!hashcat -w 4 -m 1000 –benchmark”).  
 
-![P100 Benchmark Test](/assets/images/p100_benchmark_test.jpg)  
+![P100 Benchmark Test](/assets/images/p100_benchmark_test.JPG)  
 
 Give it a try on your next hash cracking endeavor and let me know how it goes!  
