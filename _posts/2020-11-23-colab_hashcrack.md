@@ -40,7 +40,7 @@ When you are ready to run, click Runtime > Run All. You could also use CTRL+F9. 
 
 At least with the free version there’s no way to select a specific GPU and between two separate sessions of running this I received the P100 and the K80.  
 
-Here is the K80 doing in a brute force attack against a list of 606 NTLM hashes.  
+Here is the K80 doing a brute force attack against a list of 606 NTLM hashes.  
 
 ![K80 Benchmark](/assets/images/k80_benchmark.JPG)  
 
